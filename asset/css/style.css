@@ -1,0 +1,47 @@
+@import "reset.css";
+
+#header{
+   display: inline;
+   padding: 0 110px;
+ }
+ #header a{
+   text-decoration: none;
+   font-weight: bold;
+   color: blue;
+ }
+
+ #header a:hover{
+   background-color: #50A8B4;
+   border-radius: 5px;
+   padding: 10px;
+   font-weight: bold;
+ }
+
+h1 {
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 25px ;
+  color: #cf0011;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+#footer{
+  display: inline;
+  padding-left: 200px;
+  text-transform: uppercase;
+}
+p {
+  padding: 15px 0;
+}
+body {
+  background-image: url(../image/vaccination-obligatoire.jpg);
+  font-family: 'Roboto', serif, Verdana, Arial, sans-serif;
+  font-size: 17px;
+  line height: 1.5;
+  color: #000;
+}
