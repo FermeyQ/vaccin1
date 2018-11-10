@@ -9,9 +9,15 @@
   <body>
     <nav>
       <ul>
+        <li id="header"><a href="admin/index.php">Back-Office</a></li>
         <li id="header"><a href="index.php">Accueil</li></a>
+        <?php if (isLogged()){ ?>
+        <li id="header"><a href="deconnection.php">Déconnexion</a></li>
+        <!-- <li id="header"><a href="faq.php">(Des questions ?)</li></a> -->
+        <?php }else{ ?>
         <li id="header"><a href="lesvaccins.php">Les Vaccins</li></a>
-        <li id="header"><a href="faq.php">(Des questions ?)</li></a>
-        <li id="header"><a href="inscription.php">Inscription</li></a>
-      </ul>
+        <li id="header"><a href="inscription.php">Inscription</a></li>
+        <li id="header"><a href="connection.php">Connexion</a></li>     
+        <?php } ?>
+ </ul>
     </nav>
