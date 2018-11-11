@@ -10,7 +10,7 @@ if (!empty($_POST['submitted'])) {
   $login = trim(strip_tags($_POST['login']));
   $password = trim(strip_tags($_POST['password']));
   //vérification dans la base de données
-  $sql ="SELECT * FROM  WHERE pseudo = :login OR email=:login";
+  $sql ="SELECT * FROM user WHERE pseudo = :login OR email=:login";
     $query = $pdo->prepare($sql);
     $query -> bindValue(':login',$login,PDO::PARAM_STR);
     $query -> execute();
