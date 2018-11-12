@@ -1,6 +1,7 @@
 <?php include ('../inc/fonction.php') ?>
 <?php include ('../inc/pdo.php') ?>
 <?php $title = 'Back Office';?>
+
 <?php include ('inc/headerback.php');?>
 
 <body>
