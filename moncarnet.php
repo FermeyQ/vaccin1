@@ -3,11 +3,11 @@
 
 
 
-<?php debug ($_SESSION);
-$title = 'Mon carnet';
-?>
-<?php include ('inc/header.php'); ?>
-<h1>MON CARNET</h1>
-
+<div class="wrap">
+  <?php debug ($_SESSION);
+  $title = 'Mon carnet';
+  ?>
+  <?php include ('inc/header.php'); ?>
 
 <?php include ('inc/footer.php') ?>
+</div>
