@@ -15,9 +15,11 @@
       <!--Le menu NAV-->
       <nav>
         <ul>
-        
-        <li><a href="admin/index.php">Back-Office</a></li>
+
         <li><a href="index.php">Accueil</a></li>
+        <?php if (isAdmin()) { ?>
+          <li><a href="admin/index.php">Back-Office</a></li>
+        <?php } ?>
         <?php if (isLogged()){ ?>
           <li><a href="moncarnet.php">Mon carnet</a></li>
           <li><a href="deconnection.php">Déconnexion</a></li>
