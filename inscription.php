@@ -75,7 +75,7 @@ if (!empty($_POST['submitted'])) {
         $query->bindValue(':email', $email, PDO::PARAM_STR);
         $query->bindValue(':password', $hash, PDO::PARAM_STR);
         $query->execute();
-        header ('location: moncarnet.php');
+        header ('location: connection.php');
     }
 }
 ?>

@@ -2,33 +2,40 @@
 <?php include('../inc/pdo.php') ?>
 <?php $title = 'New Vaccins';?>
 
-<<<<<<< HEAD
-
-
-
-<?php include('inc/headerback.php');?>
-<form action="" method="post">
-  <input type="submit" name="submitted" value="envoyer">
-</form>
-=======
 <?php
+// tableau d'erreur
 $error = array();
+// condition de soumission du formulaire
 if (!empty($_POST['submitted'])) {
     // faille XSS
     $newvaccins = trim(strip_tags($_POST['newvaccins']));
     $newmaladie = trim(strip_tags($_POST['newmaladie']));
+    // verif vaccin exist
     if (!empty($newvaccins)) {
-        $sql = "SELECT nom_vaccin FROM vaccin1_vaccin";
+        $sql = "SELECT nom_vaccin FROM vaccin1_vaccin WHERE nom_vaccin = :nom_vaccin";
         $query = $pdo -> prepare($sql);
+        $query->bindValue(':newvaccins', $newvaccins, PDO::PARAM_STR);
         $query -> execute();
         $nomExistant = $query -> fetch();
+        if (!empty($nomExistant)) {
+            $error['newvaccins'] = 'Vaccin existant';
+        }
+    } else {
+        $error['newvaccins'] = 'Veuillez renseigner un nom de vaccin !';
     }
-    if (!empty($nomExistant)) {
-        $error['nomExistant'] = 'Vaccin existant';
+    // verif maladie
+    if (empty($newmaladie)) {
+        $error['newmaladie'] = 'Veuillez renseigner un nom de maladie !';
+    }
+    // si pas d'erreurs
+    if (count($error) == 0) {
+        $sql = "INSERT INTO vaccin1_vaccin (nom_vaccin, nom_maladie VALUES (:nom_vaccin, :nom_maladie)";
+        $query = $pdo->prepare($sql);
+        $query->bindValue(':newvaccins', $newvaccins, PDO::PARAM_STR);
+        $query ->exectute();
+        header ('location: newvaccins.php');
     }
 }
-
-
 ?>
 <?php include('inc/headerback.php');?>
 
@@ -45,8 +52,10 @@ if (!empty($_POST['submitted'])) {
                 <!-- formulaire -->
                 <form action="#" method="post">
                     <label for="newvaccins">Nom du vaccin</label>
+                    <span class="error"><?php if (!empty($error['newvaccins'])) {echo $error['newvaccins'];}?></span>
                     <input type="text" name="newvaccins" id="newvaccins" value="">
                     <label for="newmaladie">Nom de la maladie</label>
+                    <span class="error"><?php if (!empty($error['newmaladie'])) {echo $error['newmaladie'];}?></span>
                     <input type="text" name="newmaladie" id="newmaladie" value="">
                     <input type="submit" name="submitted" id="" value="CONFIRMER">
                 </form>
@@ -76,4 +85,3 @@ if (!empty($_POST['submitted'])) {
 </body>
 
 </html>
->>>>>>> 24af0dbc4f6ef8f3596503139ec477e472e5b380

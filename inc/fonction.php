@@ -1,8 +1,9 @@
 <?php
+// saute une ligne
 function br(){
   echo '<br>';
 }
-
+// affiche un tableau lisible
 function debug($array){
   echo '<pre>';
   print_r($array);
