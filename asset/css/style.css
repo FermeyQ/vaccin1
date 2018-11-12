@@ -18,14 +18,11 @@ body{
 }
 
 #header{
-  height: 80px;
-  background-color: #25527f;
-  margin-bottom: 80px;
+  background-color: ;
 }
 h1{
   font-size: 2em;
   color: #fff;
-  margin-top: 35px;
   padding:10px;
   text-align: center;
 }
@@ -51,6 +48,7 @@ header#header nav ul li{
   float: left;
   display: inline-block;
   list-style-type: none;
+  text-align: center;
 }
 header#header nav ul li a{
   color: #fff;
@@ -59,38 +57,34 @@ header#header nav ul li a{
   font-size: 1.3em;
   border-radius: 5px;
   text-decoration: none;
+  width: 100%;
 }
 header#header nav ul li a:hover{
   color: #25527f;
   background-color: #fff;
+  width: 100%;
 }
 
 div h2 a{
     list-style-type: none;
     color: #fff;
 }
+
+
 /*------------------------RESPONSIVE--------------------------------*/
 
 @media screen and (max-width:700px) {
-
-  #section-center .sectionx{
-    width: 100%;
-    margin: 30px 0;/*top bottom*/
-
-  }
-  /*LOGO*/
-  #header h1{
-    width: 100%
-  }
 
   #header nav{
     height: 50px;
     background-color: rgba(235, 234, 216,0);
   }
 
-  #header nav ul li a{
+  #header nav ul li {
     width: 100%;
     background-color:rgba(235, 234, 216,.5);
+    padding:15px;
+    margin: auto;
   }
 
 #header{
@@ -100,9 +94,12 @@ div h2 a{
 #header h2{
   width: 100%;
   text-align: center;
-
 }
 
+.wrap{
+  padding:3%;
+  text-align:center;
+}
 
 /*---------------------FOOTER------------------*/
 #footer{
