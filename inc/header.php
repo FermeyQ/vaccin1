@@ -8,10 +8,6 @@
   <body>
   <div class="wrap">
     <header id = "header">
-      <!--La petite barre au dessus-->
-      <div>
-        <h1>VACCINATION</h1>
-      </div>
       <!--Le menu NAV-->
       <nav>
         <ul>
