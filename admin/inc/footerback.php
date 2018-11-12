@@ -1,4 +1,4 @@
-    <p>Nous contacter</p>
+    <p>FOOTER</p>
 
   </body>
 </html>

@@ -2,87 +2,75 @@
 include ('inc/headerback.php');
 ?>
 
+<?php
+// FORMULAIRE SOUMIS
+$error = array();
+if (!empty($_POST['submitted'])) {
+// FAILLE XSS
+    $name = trim(strip_tags($_POST['name']));
+    $email = trim(strip_tags($_POST['email']));
+
+// VALIDATION
+    // validation name
+    if (!empty($name)) {
+        if (strlen($name) < 5) {
+            $error['name'] = 'min 5 caracteres';
+        } elseif (strlen($name) > 50) {
+            $error['name'] = 'max 50 caracteres';
+        } else {
+            //    requete
+            $sql = "SELECT name FROM user WHERE name = :name";
+            $query = $pdo->prepare($sql);
+            $query->bindValue(':name', $name, PDO::PARAM_STR);
+            $query->execute();
+            $username = $query->fetch();
+            if (!empty($username)) {
+                $error['name'] = 'name deja utilisé';
+            }
+        }
+    } else {
+        $error['name'] = 'renseigner un name';
+    }
+
+// validation email
+    if (!empty($email)) {
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $error['email'] = 'renseigner un email';
+        } else {
+            //    requete
+            $sql = "SELECT email FROM vaccin1_user WHERE email = :email";
+            $query = $pdo->prepare($sql);
+            $query->bindValue(':email', $email, PDO::PARAM_STR);
+            $query->execute();
+            $useremail = $query->fetch();
+            if (!empty($useremail)) {
+                $error['email'] = 'email deja utilisé';
+            }
+        }
+    } else {
+        $error['email'] = 'renseigner un email';
+    }
+
+// SI AUCUNE ERROR
+    if (count($error) == 0) {
+        $success = true;
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+        $token = generateRandomString(120);
+        $sql = "INSERT INTO vaccin1_user (name,email,token,password,role,created_at) VALUES (:name,:email,'$token',:password,'user',NOW())";
+        $query = $pdo->prepare($sql);
+        $query->bindValue(':name', $name, PDO::PARAM_STR);
+        $query->bindValue(':email', $email, PDO::PARAM_STR);
+        $query->bindValue(':password', $hash, PDO::PARAM_STR);
+        $query->execute();
+        header ('location: moncarnet.php');
+    }
+}
+?>
+
 <body>
-
-    <div id="wrapper">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.php">Back-Office</a>
-            </div>
-            <!-- /.navbar-header -->
-
-            <ul class="nav navbar-top-links navbar-right">
-
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-            <!-- /.navbar-top-links -->
-
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="../index.php"><i class="fa fa-edit fa-fw"></i>Clients</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i>Users<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="newusers.php">New Users</a>
-                                </li>
-                                <li>
-                                    <a href="editusers.php">Edit Users</a>
-                                </li>
-                                <li>
-                                    <a href="deleteusers.php">Delete Users</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i>Vaccins<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="newvaccins.php">New Vaccins</a>
-                                </li>
-                                <li>
-                                    <a href="editvaccins.php">Edit Vaccins</a>
-                                </li>
-                                <li>
-                                    <a href="deletevaccins.php">Delete Vaccins</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
+<?php
+include ('inc/navback.php');
+?>
 
         <!-- Page Content -->
         <div id="page-wrapper">
