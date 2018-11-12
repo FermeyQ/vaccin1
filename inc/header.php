@@ -11,9 +11,9 @@
       <li><a href="admin/index.php">Back-Office</a></li>
       <li><a href="index.php">Accueil</a></li>
       <?php if (isLogged()){ ?>
-        <li><a href="filmsavoir.php">Films a voir !</a></li>
+        <li><a href="moncarnet.php">Mon carnet</a></li>
         <li><a href="deconnection.php">Déconnexion</a></li>
-        <li>Bonjour <?php echo $_SESSION['user']['pseudo']; ?></li>
+        <li>Bonjour <?php echo $_SESSION['user']['name']; ?></li>
       <?php }else{ ?>
         <li><a href="inscription.php">Inscription</a></li>
         <li><a href="connection.php">Connexion</a></li>

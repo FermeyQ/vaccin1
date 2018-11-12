@@ -40,7 +40,7 @@ if (!empty($_POST['submitted'])) {
             $error['email'] = 'renseigner un email';
         } else {
             //    requete
-            $sql = "SELECT email FROM user WHERE email = :email";
+            $sql = "SELECT email FROM vaccin1_user WHERE email = :email";
             $query = $pdo->prepare($sql);
             $query->bindValue(':email', $email, PDO::PARAM_STR);
             $query->execute();
@@ -70,7 +70,7 @@ if (!empty($_POST['submitted'])) {
         $success = true;
         $hash = password_hash($password, PASSWORD_DEFAULT);
         $token = generateRandomString(120);
-        $sql = "INSERT INTO user (name,email,token,password,role,created_at) VALUES (:name,:email,'$token',:password,'user',NOW())";
+        $sql = "INSERT INTO vaccin1_user (name,email,token,password,role,created_at) VALUES (:name,:email,'$token',:password,'user',NOW())";
         $query = $pdo->prepare($sql);
         $query->bindValue(':name', $name, PDO::PARAM_STR);
         $query->bindValue(':email', $email, PDO::PARAM_STR);

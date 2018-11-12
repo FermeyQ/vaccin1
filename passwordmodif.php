@@ -9,7 +9,7 @@ $errors = array();
 if (!empty($_GET['email']) && !empty($_GET['token'])) {
   $email = urldecode($_GET['email']);
   $token = urldecode($_GET['token']);
-  $sql = "SELECT id FROM user WHERE email = :email AND token = :token";
+  $sql = "SELECT id FROM vaccin1_user WHERE email = :email AND token = :token";
   $query = $pdo->prepare($sql);
   $query ->bindValue(':email',$email,PDO::PARAM_STR);
   $query ->bindValue(':token',$token,PDO::PARAM_STR);

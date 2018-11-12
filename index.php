@@ -2,6 +2,7 @@
 <?php include 'inc/fonction.php' ?>
 <?php include 'inc/pdo.php';
 $title = 'Accueil';
+debug ($_SESSION);
 ?>
 <?php include 'inc/header.php' ?>
 <section id="vaccins">
