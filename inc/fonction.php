@@ -30,3 +30,12 @@ function isLogged()
     }
     return false;
 }
+
+function isAdmin() {
+ if(islogged()) {
+   if($_SESSION['user']['role'] == 'admin') {
+     return true;
+   }
+ }
+ return false;
+}
