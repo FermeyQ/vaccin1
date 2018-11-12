@@ -1,7 +1,6 @@
 <?php include ('inc/fonction.php') ?>
 <?php include ('inc/pdo.php');
 $title = 'Accueil';
-debug ($_SESSION);
 ?>
 <?php include ('inc/header.php') ?>
 <div class="wrap">
@@ -37,6 +36,5 @@ debug ($_SESSION);
     </section>
   </header>
 
-</div>
-
 <?php include ('inc/footer.php')?>
+</div>

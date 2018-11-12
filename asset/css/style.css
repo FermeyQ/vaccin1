@@ -69,7 +69,9 @@ div h2 a{
     list-style-type: none;
     color: #fff;
 }
-
+#footer{
+  display: inline-block;
+}
 
 /*------------------------RESPONSIVE--------------------------------*/
 
