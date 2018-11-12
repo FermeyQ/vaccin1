@@ -1,13 +1,24 @@
 <?php include('../inc/fonction.php') ?>
 <?php include('../inc/pdo.php') ?>
-<?php $title = 'List Users';?>
+<?php $title = 'New Vaccins';?>
 
 <?php
 $error = array();
-$sql = "SELECT name, email FROM vaccin1_user";
-$query = $pdo -> prepare($sql);
-$query -> execute();
-$users = $query ->fetchAll();
+if (!empty($_POST['submitted'])) {
+    // faille XSS
+    $newvaccins = trim(strip_tags($_POST['newvaccins']));
+    $newmaladie = trim(strip_tags($_POST['newmaladie']));
+    if (!empty($newvaccins)) {
+        $sql = "SELECT nom_vaccin FROM vaccin1_vaccin";
+        $query = $pdo -> prepare($sql);
+        $query -> execute();
+        $nomExistant = $query -> fetch();
+    }
+    if (!empty($nomExistant)) {
+        $error['nomExistant'] = 'Vaccin existant';
+    }
+}
+
 
 ?>
 <?php include('inc/headerback.php');?>
@@ -20,21 +31,16 @@ $users = $query ->fetchAll();
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">List User</h1>
+                    <h1 class="page-header">New Vaccins</h1>
                 </div>
-                <?php
-                    foreach ($users as $user) {
-                        echo $user['name']. ' / ';
-                        echo $user['email']; ?>
                 <!-- formulaire -->
                 <form action="#" method="post">
-                    <label for="editusers"></label>
-                    <input type="submit" name="editusers" id="editusers" value="EDIT">
-                    <label for="deleteusers"></label>
-                    <input type="submit" name="deleteusers" id="deleteusers" value="DELETE">
+                    <label for="newvaccins">Nom du vaccin</label>
+                    <input type="text" name="newvaccins" id="newvaccins" value="">
+                    <label for="newmaladie">Nom de la maladie</label>
+                    <input type="text" name="newmaladie" id="newmaladie" value="">
+                    <input type="submit" name="submitted" id="" value="CONFIRMER">
                 </form>
-                <?php
-                    }?>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->

@@ -4,7 +4,7 @@
 
 
 <div class="wrap">
-  <?php debug ($_SESSION);
+  <?php
   $title = 'Mon carnet';
   ?>
   <?php include ('inc/header.php'); ?>

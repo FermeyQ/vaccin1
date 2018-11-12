@@ -1,77 +1,53 @@
-<?php include ('../inc/fonction.php') ?>
-<?php include ('../inc/pdo.php') ?>
+<?php include('../inc/fonction.php') ?>
+<?php include('../inc/pdo.php') ?>
 <?php $title = 'List Vaccins';?>
+
 <?php
 $error = array();
-if (!empty($_POST['submitted'])) {
-// FAILLE XSS
-    $nom_vaccin = trim(strip_tags($_POST['nom_vaccin']));
-    $nom_maladie = trim(strip_tags($_POST['nom_maladie']));
-
-// VALIDATION
-    // validation nom vaccin
-    if (!empty($nom_vaccin)) {
-        if (strlen($nom_vaccin) < 5) {
-            $error['nom_vaccin'] = 'min 5 caracteres';
-        } elseif (strlen($nom_vaccin) > 50) {
-            $error['nom_vaccin'] = 'max 50 caracteres';
-        } else {
-            //    requete
-            $sql = "SELECT nom_vaccin FROM vaccin1_vaccin WHERE nom_vaccin = :nom_vaccin";
-            $query = $pdo->prepare($sql);
-            $query->bindValue(':nom_vaccin', $nom_vaccin, PDO::PARAM_STR);
-            $query->execute();
-            $vaccin_name = $query->fetch();
-            if (!empty($vaccinname)) {
-                $error['nom_vaccin'] = 'vaccin deja utilisé';
-            }
-        }
-    } else {
-        $error['nom_vaccin'] = 'renseigner un vaccin';
-    }
-
-// validation nom maladie
-    if (empty($nom_maladie)) {
-            $error['nom_maladie'] = 'renseigner une maladie';
-    }
-    if (count($error) == 0) {
-        $sql = "INSERT INTO vaccin1_vaccin (nom_vaccin,nom_maladie) VALUES (:nom_vaccin,:nom_maladie)";
-        $query = $pdo->prepare($sql);
-        $query->bindValue(':nom_vaccin', $nom_vaccin, PDO::PARAM_STR);
-        $query->bindValue(':nom_maladie', $nom_maladie, PDO::PARAM_STR);
-        $query->execute();
-        header ('location: index.php');
-    }
-  }
+$sql = "SELECT nom_vaccin, nom_maladie FROM vaccin1_vaccin";
+$query = $pdo -> prepare($sql);
+$query -> execute();
+$users = $query ->fetchAll();
+if (!empty($_POST['newvaccins'])) {
+    header('Location: newvaccins.php');
+}
 ?>
- <?php include ('inc/headerback.php');?>
-<body>
-<?php include ('inc/navback.php');?>
+<?php include('inc/headerback.php');?>
 
-        <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">New Vaccins</h1>
-                    </div>
-                    <!-- /.col-lg-12 -->
-                    <!-- formulaire-->
-                    <form action="" method="post">
-                        <label for="nom_vaccin">nom du vaccin</label>
-                        <span class="error"><?php if (!empty($error['nom_vaccin'])) {echo $error['nom_vaccin'];}?></span>
-                        <input type="text" name="nom_vaccin" id="nom_vaccin" value="<?php if(!empty($_POST['nom_vaccin'])){echo $_POST['nom_vaccin'];} ?>">
-                        <label for="nom_maladie">nom de la maladie traitée</label>
-                        <span class="error"><?php if (!empty($error['nom_maladie'])) {echo $error['nom_maladie'];}?></span>
-                        <input type="text" name="nom_maladie" id="nom_maladie" value="<?php if(!empty($_POST['nom_maladie'])){echo $_POST['nom_maladie'];} ?>">
-                        <input type="submit" name="submitted" value="Confirmer">
-                    </form>
+<body>
+    <?php include('inc/navback.php');?>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">List Vaccins</h1>
                 </div>
-                <!-- /.row -->
+                <!-- /.col-lg-12 -->
+                <form action="#" method="post">
+                    <input type="submit" name="newvaccins" id="newvaccins" value="NEW VACCIN">
+                </form>
+                <?php
+                    foreach ($users as $user) {
+                        echo $user['nom_vaccin']. ' / ';
+                        echo $user['nom_maladie']; ?>
+                <!-- formulaire -->
+                <form action="#" method="post">
+                    <label for="editusers"></label>
+                    <input type="submit" name="editvaccins" id="editvaccins" value="EDIT">
+                    <label for="editusers"></label>
+                    <label for="deleteusers"></label>
+                    <input type="submit" name="deletevaccins" id="deletevaccins" value="DELETE">
+                </form>
+                <?php
+                    }?>
             </div>
-            <!-- /.container-fluid -->
+            <!-- /.row -->
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
 
     </div>
     <!-- /#wrapper -->
