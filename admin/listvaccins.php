@@ -1,6 +1,6 @@
 <?php include ('../inc/fonction.php') ?>
 <?php include ('../inc/pdo.php') ?>
-<?php $title = 'New Vaccins';?>
+<?php $title = 'List Vaccins';?>
 <?php
 $error = array();
 if (!empty($_POST['submitted'])) {
