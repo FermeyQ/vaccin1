@@ -83,18 +83,19 @@ if (!empty($_POST['submitted'])) {
 <?php include 'inc/header.php' ?>
 <h2>S'inscrire</h2>
 <!-- formulaire d'inscriptions -->
-<!-- FORMULAIRES -->
 <form action="" method="post">
 
     <!-- form name -->
     <label for="name">name *</label>
     <span class="error"><?php if (!empty($error['name'])) {echo $error['name'];}?></span>
-    <input type="text" name="name" value="<?php if (!empty($_POST['name'])) {echo $_POST['name'];}?>" placeholder="jeanjean">
+    <input type="text" name="name" value="<?php if (!empty($_POST['name'])) {echo $_POST['name'];}?>"
+        placeholder="jeanjean">
 
     <!-- form email -->
     <label for="email">Email *</label>
     <span class="error"><?php if (!empty($error['email'])) {echo $error['email'];}?></span>
-    <input type="email" name="email" value="<?php if (!empty($_POST['email'])) {echo $_POST['email'];}?>" placeholder="jeanjean@gmail.com">
+    <input type="email" name="email" value="<?php if (!empty($_POST['email'])) {echo $_POST['email'];}?>"
+        placeholder="jeanjean@gmail.com">
 
     <!-- form password -->
     <label for="password">Password *</label>
@@ -108,4 +109,4 @@ if (!empty($_POST['submitted'])) {
     <!-- form submit -->
     <input type="submit" name="submitted" value="Envoyer">
 </form>
-<?php include 'inc/footer.php'?>
+<?php include 'inc/footer.php';

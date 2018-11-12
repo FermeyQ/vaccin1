@@ -122,11 +122,20 @@
                         <h1 class="page-header">Delete Users</h1>
                     </div>
                     <!-- /.col-lg-12 -->
-                    <!-- formulaire-->
+                    <!-- formulaire name-->
                     <form action="#" method="post">
-                        <label for="deleteuser">Delete User</label>
-                        <input type="text" name="deleteuser" id="deleteuser" value="">
+                        <label for="name">Nom Utilisateur a supprimer :</label>
+                        <span class="error"><?php if (!empty($error['name'])) {echo $error['name'];}?></span>
+                        <input type="text" name="name" id="name" value="<?php if (!empty($_POST['name'])) {echo $_POST['name'];}?>">
                         <input type="submit" value="Confirmer">
+                        <br>
+
+                    <!-- formulaire email-->
+                        <label for="email">Email utilisateur a supprimer :</label>
+                        <span class="error"><?php if (!empty($error['email'])) {echo $error['email'];}?></span>
+                        <input type="text" name="email" id="email" value="<?php if (!empty($_POST['email'])) {echo $_POST['email'];}?>">
+                        <input type="submit" value="Confirmer">
+
                     </form>
                 </div>
                 <!-- /.row -->
