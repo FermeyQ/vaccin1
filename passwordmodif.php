@@ -44,7 +44,7 @@ if (!empty($_GET['email']) && !empty($_GET['token'])) {
         $query ->bindValue(':id',$user['id']);
         $query ->execute();
         //redirection
-        header('Location:connexion.php');
+        header('Location:connection.php');
       }
     }
   } else {

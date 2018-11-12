@@ -12,7 +12,7 @@ if (!empty($_POST['submitted'])){
     if (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
       $errors['email'] = 'Veuillez renseigner un email valide';
     }else {
-      $sql ="SELECT email,token FROM user WHERE email = :email";
+      $sql ="SELECT email,token FROM vaccin1_user WHERE email = :email";
       $query = $pdo->prepare($sql);
       $query -> bindValue(':email',$email,PDO::PARAM_STR);
       $query -> execute();

@@ -49,6 +49,9 @@ if (!empty($_POST['submitted'])) {
 } ?>">
   <label for="password">Mot de passe</label>
   <input type="password" name="password" value="">
+  <span><?php if (!empty($errors['password'])) {
+    echo $errors['password'];
+} ?></span>
   <input type="submit" name="submitted" value="Se connecter">
 </form>
 <a href="passwordforget.php">Mot de passe oublié</a>

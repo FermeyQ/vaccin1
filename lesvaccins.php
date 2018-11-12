@@ -1,8 +1,10 @@
-<h1>Les Vaccins</h1>
+<?php include('inc/pdo.php'); ?>
+<?php include('inc/fonction.php'); ?>
 <?php
 $title = 'Les vaccins';
 ?>
 <?php include 'inc/header.php' ?>
+<h1>Les Vaccins</h1>
 <div>
   <h4>
     <a href="/web/vaccines/45-engerix-b-10-g">ENGERIX B 10 µg</a>
