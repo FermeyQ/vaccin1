@@ -3,8 +3,6 @@
 
   <!--FOOTER----------------------------->
   <footer id="footer">
-    <div class="wrap">
-
       <!--CASE 1-->
       <div class="piedpage">
         <h3>Solutions</h3>
