@@ -1,6 +1,7 @@
 <?php include '../inc/fonction.php' ?>
 <?php include '../inc/pdo.php' ?>
 <?php
+$title = 'Edit Vaccins';
 $error = array();
 //form soumis
 if (!empty($_POST['submitted'])){
@@ -24,9 +25,7 @@ include ('inc/headerback.php');
 ?>
 
 <body>
-<?php
-include ('inc/navback.php');
-?>
+<?php include ('inc/navback.php');?>
 
         <!-- Page Content -->
         <div id="page-wrapper">

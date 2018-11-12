@@ -1,9 +1,9 @@
-<?php include 'inc/fonction.php' ?>
-<?php include 'inc/pdo.php';
+<?php include ('inc/fonction.php') ?>
+<?php include ('inc/pdo.php');
 $title = 'Accueil';
 debug ($_SESSION);
 ?>
-<?php include 'inc/header.php' ?>
+<?php include ('inc/header.php') ?>
 <h1>Accueil</h1>
 <section id="vaccins">
 
@@ -36,4 +36,4 @@ debug ($_SESSION);
 </section>
 
   <h2><a href="lesvaccins.php">Voir la liste des principaux vaccins</a></h2>
-<?php include 'inc/footer.php'?>
+<?php include ('inc/footer.php')?>

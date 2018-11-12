@@ -1,18 +1,17 @@
-<h1>Mon Carnet</h1>
-<?php include 'inc/fonction.php' ?>
-<?php include 'inc/pdo.php' ?>
+<?php include ('inc/fonction.php') ?>
+<?php include ('inc/pdo.php') ?>
 <?php
 $title = 'S\'inscrire';
 // FORMULAIRE SOUMIS
 $error = array();
 if (!empty($_POST['submitted'])) {
-// FAILLE XSS
+    // FAILLE XSS
     $name = trim(strip_tags($_POST['name']));
     $email = trim(strip_tags($_POST['email']));
     $password = trim(strip_tags($_POST['password']));
     $password2 = trim(strip_tags($_POST['password2']));
-
-// VALIDATION
+    
+    // VALIDATION
     // validation name
     if (!empty($name)) {
         if (strlen($name) < 5) {
@@ -33,8 +32,8 @@ if (!empty($_POST['submitted'])) {
     } else {
         $error['name'] = 'renseigner un name';
     }
-
-// validation email
+    
+    // validation email
     if (!empty($email)) {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $error['email'] = 'renseigner un email';
@@ -52,8 +51,8 @@ if (!empty($_POST['submitted'])) {
     } else {
         $error['email'] = 'renseigner un email';
     }
-
-// validation password
+    
+    // validation password
     if (!empty($password) && !empty($password2)) {
         if ($password != $password2) {
             $error['password'] = 'Vos mots de passe ne correspondent pas';
@@ -64,8 +63,8 @@ if (!empty($_POST['submitted'])) {
     } else {
         $error['password'] = 'Veuillez entrer un mot de passe';
     }
-
-// SI AUCUNE ERROR
+    
+    // SI AUCUNE ERROR
     if (count($error) == 0) {
         $success = true;
         $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -81,7 +80,7 @@ if (!empty($_POST['submitted'])) {
 }
 ?>
 <?php include 'inc/header.php' ?>
-<h2>S'inscrire</h2>
+<h1>S'inscrire</h1>
 <!-- formulaire d'inscriptions -->
 <form action="" method="post">
 

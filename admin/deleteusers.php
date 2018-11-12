@@ -1,16 +1,15 @@
-<?php
-include ('inc/headerback.php');
-?>
+<?php include ('../inc/fonction.php') ?>
+<?php include ('../inc/pdo.php') ?>
 
 <?php
 // FORMULAIRE SOUMIS
 $error = array();
 if (!empty($_POST['submitted'])) {
-// FAILLE XSS
+    // FAILLE XSS
     $name = trim(strip_tags($_POST['name']));
     $email = trim(strip_tags($_POST['email']));
-
-// VALIDATION
+    
+    // VALIDATION
     // validation name
     if (!empty($name)) {
         if (strlen($name) < 5) {
@@ -31,8 +30,8 @@ if (!empty($_POST['submitted'])) {
     } else {
         $error['name'] = 'renseigner un name';
     }
-
-// validation email
+    
+    // validation email
     if (!empty($email)) {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $error['email'] = 'renseigner un email';
@@ -50,8 +49,8 @@ if (!empty($_POST['submitted'])) {
     } else {
         $error['email'] = 'renseigner un email';
     }
-
-// SI AUCUNE ERROR
+    
+    // SI AUCUNE ERROR
     if (count($error) == 0) {
         $success = true;
         $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -66,11 +65,11 @@ if (!empty($_POST['submitted'])) {
     }
 }
 ?>
+<?php $title = 'Delete Users';?>
+<?php include ('inc/headerback.php');?>
 
 <body>
-<?php
-include ('inc/navback.php');
-?>
+<?php include ('inc/navback.php');?>
 
         <!-- Page Content -->
         <div id="page-wrapper">
@@ -116,7 +115,6 @@ include ('inc/navback.php');
 
     <!-- Custom Theme JavaScript -->
     <script src="asset/sb-admin-2.js"></script>
-
 
 </body>
 

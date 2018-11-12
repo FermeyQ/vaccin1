@@ -2,11 +2,13 @@
 function br(){
   echo '<br>';
 }
+
 function debug($array){
   echo '<pre>';
   print_r($array);
   echo '</pre>';
 }
+
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
@@ -16,6 +18,7 @@ function generateRandomString($length = 10) {
     }
     return $randomString;
 }
+
 function isLogged()
 {
     if (!empty($_SESSION['user']) AND
@@ -30,3 +33,12 @@ function isLogged()
     }
     return false;
 }
+
+function isAdmin() {
+    if(islogged()) {
+      if($_SESSION['user']['role'] == 'admin') {
+        return true;
+      }
+    }
+    return false;
+  }

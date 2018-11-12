@@ -7,8 +7,6 @@
 $title = 'Mon carnet';
 ?>
 <?php include ('inc/header.php'); ?>
-
-
 <h1>MON CARNET</h1>
 
 
