@@ -42,25 +42,10 @@
                         <a href="../index.php"><i class="fa fa-edit fa-fw"></i>Clients</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i>Users<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="listusers.php">List Users</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
+                        <a href="listusers.php"><i class="fa fa-edit fa-fw"></i>List Users</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>Vaccins<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="listvaccins.php">List Vaccins</a>
-                            </li>
-                            <li>
-                                <a href="newvaccins.php">New Vaccins</a>
-                            </li>
-                        </ul>
-                        <!-- /.nav-second-level -->
+                        <a href="listvaccins.php"><i class="fa fa-edit fa-fw"></i>List Vaccins</a>
                     </li>
                 </ul>
             </div>
