@@ -23,7 +23,7 @@ $users = $query ->fetchAll();
                 </div>
                 <!-- /.col-lg-12 -->
                 <form action="#" method="post">
-                <input type="submit" name="newvaccins" id="newvaccins" value="NEW USER">
+                <input type="submit" name="newvaccins" id="newvaccins" value="NEW VACCIN">
                 </form>
                 <?php
                     foreach ($users as $user) {
