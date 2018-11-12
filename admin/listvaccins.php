@@ -9,9 +9,6 @@ $query = $pdo -> prepare($sql);
 $query -> execute();
 $users = $query ->fetchAll();
 if (!empty($_POST['newvaccins'])) {
-  $lien = '<a herf ="newvaccins.php">Nouveau vaccins</a>';
-}
-if (!empty($_POST['newvaccins'])) {
   header ('Location: newvaccins.php');
 }
 ?>
