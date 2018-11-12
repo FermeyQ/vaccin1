@@ -1,5 +1,6 @@
-<?php include '../inc/fonction.php' ?>
-<?php include '../inc/pdo.php' ?>
+<?php include ('../inc/fonction.php') ?>
+<?php include ('../inc/pdo.php') ?>
+<?php $title = 'New Vaccins';?>
 <?php
 $error = array();
 if (!empty($_POST['submitted'])) {
@@ -42,12 +43,9 @@ if (!empty($_POST['submitted'])) {
     }
   }
 ?>
- <?php
- include ('inc/headerback.php'); ?>
+ <?php include ('inc/headerback.php');?>
 <body>
-<?php
-include ('inc/navback.php');
-?>
+<?php include ('inc/navback.php');?>
 
         <!-- Page Content -->
         <div id="page-wrapper">
