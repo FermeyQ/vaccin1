@@ -32,8 +32,8 @@ if (!empty($_POST['newvaccins'])) {
                 </form>
                 <?php
                     foreach ($users as $user) {
-                        echo $user['nom_vaccin']. ' / ';
-                        echo $user['nom_maladie']; ?>
+                        echo '<span>Nom du vaccin : </span>' . $user['nom_vaccin']. ' / ';
+                        echo '<span>Nom de la maladie traitée : </span>' . $user['nom_maladie']; ?>
                 <!-- formulaire -->
                 <form action="#" method="post">
                     <label for="editusers"></label>
