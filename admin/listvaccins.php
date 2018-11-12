@@ -8,6 +8,9 @@ $sql = "SELECT nom_vaccin, nom_maladie FROM vaccin1_vaccin";
 $query = $pdo -> prepare($sql);
 $query -> execute();
 $users = $query ->fetchAll();
+if (!empty($_POST['newvaccins'])) {
+    header('Location: newvaccins.php');
+}
 ?>
 <?php include('inc/headerback.php');?>
 
@@ -23,7 +26,7 @@ $users = $query ->fetchAll();
                 </div>
                 <!-- /.col-lg-12 -->
                 <form action="#" method="post">
-                <input type="submit" name="newvaccins" id="newvaccins" value="NEW VACCIN">
+                    <input type="submit" name="newvaccins" id="newvaccins" value="NEW VACCIN">
                 </form>
                 <?php
                     foreach ($users as $user) {
