@@ -39,6 +39,7 @@ if (!empty($_POST['submitted'])) {
         $query->bindValue(':nom_vaccin', $nom_vaccin, PDO::PARAM_STR);
         $query->bindValue(':nom_maladie', $nom_maladie, PDO::PARAM_STR);
         $query->execute();
+        header ('location: index.php');
     }
   }
 ?>
@@ -60,13 +61,11 @@ include ('inc/navback.php');
                     <!-- formulaire-->
                     <form action="" method="post">
                         <label for="nom_vaccin">nom du vaccin</label>
-                        <span><?php if (!empty($error['nom_vaccin'])) {
-                          echo $error['nom_vaccin'];
-                        } ?></span>
-                        <input type="text" name="nom_vaccin" id="nom_vaccin" value="">
+                        <span class="error"><?php if (!empty($error['nom_vaccin'])) {echo $error['nom_vaccin'];}?></span>
+                        <input type="text" name="nom_vaccin" id="nom_vaccin" value="<?php if(!empty($_POST['nom_vaccin'])){echo $_POST['nom_vaccin'];} ?>">
                         <label for="nom_maladie">nom de la maladie traitée</label>
                         <span class="error"><?php if (!empty($error['nom_maladie'])) {echo $error['nom_maladie'];}?></span>
-                        <input type="text" name="nom_maladie" id="nom_maladie" value="">
+                        <input type="text" name="nom_maladie" id="nom_maladie" value="<?php if(!empty($_POST['nom_maladie'])){echo $_POST['nom_maladie'];} ?>">
                         <input type="submit" name="submitted" value="Confirmer">
                     </form>
                 </div>
