@@ -1,32 +1,47 @@
-<?php include ('../inc/fonction.php') ?>
-<?php include ('../inc/pdo.php') ?>
+<?php include('../inc/fonction.php') ?>
+<?php include('../inc/pdo.php') ?>
 <?php $title = 'List Users';?>
 
-<?php include ('inc/headerback.php');?>
+<?php
+$error = array();
+$sql = "SELECT name, email FROM vaccin1_user";
+$query = $pdo -> prepare($sql);
+$query -> execute();
+$users = $query ->fetchAll();
+
+?>
+<?php include('inc/headerback.php');?>
 
 <body>
-<?php include ('inc/navback.php');?>
+    <?php include('inc/navback.php');?>
 
-        <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Edit User</h1>
-                    </div>
-                    <!-- /.col-lg-12 -->
-                    <!-- formulaire-->
-                    <form action="#" method="post">
-                        <label for="editusers">Edit User</label>
-                        <input type="text" name="editusers" id="editusers" value="">
-                        <input type="submit" value="Confirmer">
-                    </form>
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">List User</h1>
                 </div>
-                <!-- /.row -->
+                <?php
+                    foreach ($users as $user) {
+                        echo $user['name']. ' / ';
+                        echo $user['email']; ?>
+                <!-- formulaire -->
+                <form action="#" method="post">
+                    <label for="editusers"></label>
+                    <input type="submit" name="editusers" id="editusers" value="EDIT">
+                    <label for="deleteusers"></label>
+                    <input type="submit" name="deleteusers" id="deleteusers" value="DELETE">
+                </form>
+                <?php
+                    }?>
+                <!-- /.col-lg-12 -->
             </div>
-            <!-- /.container-fluid -->
+            <!-- /.row -->
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
 
     </div>
     <!-- /#wrapper -->
