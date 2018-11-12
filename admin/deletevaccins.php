@@ -1,11 +1,10 @@
-<?php
-include ('inc/headerback.php');
-?>
+<?php include ('../inc/fonction.php') ?>
+<?php include ('../inc/pdo.php') ?>
+<?php $title = 'Delete Vaccins';?>
+<?php include ('inc/headerback.php');?>
 
 <body>
-<?php
-include ('inc/navback.php');
-?>
+<?php include ('inc/navback.php');?>
 
         <!-- Page Content -->
         <div id="page-wrapper">

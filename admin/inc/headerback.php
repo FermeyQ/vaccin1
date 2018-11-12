@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Delete Users</title>
+    <title><?php echo $title ?></title>
 
     <!-- Bootstrap Core CSS -->
     <link href="asset\bootstrap.min.css" rel="stylesheet">
