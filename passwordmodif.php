@@ -2,7 +2,7 @@
 <?php include('inc/fonction.php'); ?>
 <?php
 
-$title = 'Modifié password';
+$title = 'Modifier password';
 
 $errors = array();
 // si user existe bien
