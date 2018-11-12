@@ -7,10 +7,6 @@
         <!--CASE 1-->
         <div class="piedpage">
           <h3>Solutions</h3>
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
         </div>
 
 
