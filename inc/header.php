@@ -6,17 +6,27 @@
     <link rel="stylesheet" href="asset/css/style.css">
   </head>
   <body>
-    <nav>
-      <ul>
-      <li><a href="admin/index.php">Back-Office</a></li>
-      <li><a href="index.php">Accueil</a></li>
-      <?php if (isLogged()){ ?>
-        <li><a href="moncarnet.php">Mon carnet</a></li>
-        <li><a href="deconnection.php">Déconnexion</a></li>
-        <li>Bonjour <?php echo $_SESSION['user']['name']; ?></li>
-      <?php }else{ ?>
-        <li><a href="inscription.php">Inscription</a></li>
-        <li><a href="connection.php">Connexion</a></li>
-      <?php } ?>
-      </ul>
-    </nav>
+  <div class="wrap">
+    <header id = "header">
+      <!--La petite barre au dessus-->
+      <div>
+        <h1>VACCINATION</h1>
+      </div>
+      <!--Le menu NAV-->
+      <nav>
+        <ul>
+        
+        <li><a href="admin/index.php">Back-Office</a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <?php if (isLogged()){ ?>
+          <li><a href="moncarnet.php">Mon carnet</a></li>
+          <li><a href="deconnection.php">Déconnexion</a></li>
+          <li>Bonjour <?php echo $_SESSION['user']['name']; ?></li>
+        <?php }else{ ?>
+          <li><a href="inscription.php">Inscription</a></li>
+          <li><a href="connection.php">Connexion</a></li>
+        <?php } ?>
+        </ul>
+      </nav>
+    </header>
+  </div>
