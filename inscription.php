@@ -21,7 +21,7 @@ if (!empty($_POST['submitted'])) {
             $error['name'] = 'max 50 caracteres';
         } else {
             //    requete
-            $sql = "SELECT name FROM user WHERE name = :name";
+            $sql = "SELECT name FROM vaccin1_user WHERE name = :name";
             $query = $pdo->prepare($sql);
             $query->bindValue(':name', $name, PDO::PARAM_STR);
             $query->execute();

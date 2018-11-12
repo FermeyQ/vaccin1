@@ -1,10 +1,10 @@
-<h1>Accueil</h1>
 <?php include 'inc/fonction.php' ?>
 <?php include 'inc/pdo.php';
 $title = 'Accueil';
 debug ($_SESSION);
 ?>
 <?php include 'inc/header.php' ?>
+<h1>Accueil</h1>
 <section id="vaccins">
 
     <h2>C'est quoi un vaccin?</h2>
