@@ -16,7 +16,12 @@ if (!empty($_POST['submitted'])){
     $query -> bindValue(':nom_vaccin',$nom_vaccin,PDO::PARAM_STR);
     $query -> execute();
     $vaccin = $query ->fetch();
-    debug ($vaccin);
+    debug($vaccin);
+    if (!empty($vaccin)) {
+      $body = '<p>Veuillez cliquez sur le lien ci-dessous</p>';
+      $body .= '<a href="modifvaccin.php?nom_vaccin='.urlencode($vaccin['nom_vaccin']) . '">ici</a>';
+      echo $body ;
+    }
   }
 }
 ?>
@@ -41,6 +46,7 @@ include ('inc/headerback.php');
                       <span class="error"><?php if (!empty($error['nom_vaccin'])) {echo $error['nom_vaccin'];}?></span>
                       <input type="text" name="nom_vaccin" value="<?php if(!empty($_POST['nom_vaccin'])){echo $_POST['nom_vaccin'];} ?>">
                       <input type="submit" name="submitted" value="Modifier vaccin">
+
                     </form>
                 </div>
                 <!-- /.row -->
