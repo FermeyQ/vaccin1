@@ -37,4 +37,3 @@ $title = 'Accueil';
   </header>
 
 <?php include ('inc/footer.php')?>
-</div>

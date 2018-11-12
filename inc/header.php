@@ -8,14 +8,10 @@
   <body>
   <div class="wrap">
     <header id = "header">
-      <!--La petite barre au dessus-->
-      <div>
-        <h1>VACCINATION</h1>
-      </div>
-      <!--Le menu NAV-->
+      <div id="logo"></div>
+
       <nav>
         <ul>
-        
         <li><a href="admin/index.php">Back-Office</a></li>
         <li><a href="index.php">Accueil</a></li>
         <?php if (isLogged()){ ?>

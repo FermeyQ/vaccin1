@@ -20,6 +20,14 @@ body{
 #header{
   background-color: ;
 }
+#logo{
+position: absolute;
+top:
+background-image:url(" ../image/logo.png");
+width: 10%;
+height: 40px;
+z-index: 6;
+}
 h1{
   font-size: 2em;
   color: #fff;
@@ -27,7 +35,6 @@ h1{
   height:80px;
   width: 100%;
   text-align: center;
-  background-image: url(" ../image/vaccin2.jpg") no-repeat;
 }
 h2{
   color: #fff;
@@ -37,18 +44,19 @@ h2{
   border-radius: 5px;
   background-color: #25527f;
 }
-header#header nav ul{
+#header nav ul{
   position: fixed;
-  float: left;
+  float: right;
   top:0;
-  margin-left: auto;
+  margin: auto;
   width: 100%;
   max-width: 1024px;
   border-radius: 5px;
   padding:16px;
   background-color: #25527f;
+  z-index: 3;
 }
-header#header nav ul li{
+#header nav ul li{
   float: left;
   display: inline-block;
   list-style-type: none;
@@ -114,11 +122,6 @@ div h2 a{
 }
 .piedpage{
   float: left;
-  width: 33.3333333333333333333333333%;
-  padding:0 5px;/*left right*/
-  line-height: 1;
-  margin: 30px 0;/*top bottom*/
-
 }
 
 .sectionFinale p{
