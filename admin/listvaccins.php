@@ -9,7 +9,7 @@ $query = $pdo -> prepare($sql);
 $query -> execute();
 $users = $query ->fetchAll();
 if (!empty($_POST['newvaccins'])) {
-    header('Location: newvaccins.php');
+  header ('Location: newvaccins.php');
 }
 ?>
 <?php include('inc/headerback.php');?>
@@ -26,12 +26,14 @@ if (!empty($_POST['newvaccins'])) {
                 </div>
                 <!-- /.col-lg-12 -->
                 <form action="#" method="post">
-                    <input type="submit" name="newvaccins" id="newvaccins" value="NEW VACCIN">
+                <input type="submit" name="newvaccins" id="newvaccins" value="NEW VACCIN">
+                <br>
+
                 </form>
                 <?php
                     foreach ($users as $user) {
-                        echo $user['nom_vaccin']. ' / ';
-                        echo $user['nom_maladie']; ?>
+                        echo '<span>Nom du vaccin : </span>' . $user['nom_vaccin']. ' / ';
+                        echo '<span>Nom de la maladie traitée : </span>' . $user['nom_maladie']; ?>
                 <!-- formulaire -->
                 <form action="#" method="post">
                     <label for="editusers"></label>

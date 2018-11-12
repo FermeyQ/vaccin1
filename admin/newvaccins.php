@@ -2,6 +2,15 @@
 <?php include('../inc/pdo.php') ?>
 <?php $title = 'New Vaccins';?>
 
+<<<<<<< HEAD
+
+
+
+<?php include('inc/headerback.php');?>
+<form action="" method="post">
+  <input type="submit" name="submitted" value="envoyer">
+</form>
+=======
 <?php
 $error = array();
 if (!empty($_POST['submitted'])) {
@@ -67,3 +76,4 @@ if (!empty($_POST['submitted'])) {
 </body>
 
 </html>
+>>>>>>> 24af0dbc4f6ef8f3596503139ec477e472e5b380
