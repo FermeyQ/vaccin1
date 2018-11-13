@@ -3,6 +3,54 @@
 $title = 'Accueil';
 ?>
 <?php include ('inc/header.php') ?>
+
+<div class="container">
+  
+  <div class="block-media">
+    <div class="carousel-images slider-nav">
+      <div>
+        <img src="http://lorempicsum.com/simpsons/350/200/2" alt="1">
+      </div>
+      <div>
+        <img src="http://lorempicsum.com/simpsons/350/200/3" alt="2">
+      </div>
+      <div>
+        <img src="http://lorempicsum.com/simpsons/350/200/4" alt="3">
+      </div>
+    </div>
+  </div><!-- /.block-media -->
+  
+  <div class="block-text">
+    <div class="carousel-text slider-for">
+      <div>
+        <span class="title">
+          Sed ut perspiciatis unde omnis iste natus error
+        </span>
+        <p class="headline">
+          Sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </p>
+      </div>
+      <div>
+        <span class="title">
+          Nemo enim ipsam
+        </span>
+        <p class="headline">
+          Quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+      </div>
+      <div>
+        <span class="title">
+          Non provident, similique sunt in culpa
+        </span>
+        <p class="headline">
+          Officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+        </p>
+      </div>
+    </div>
+  </div><!-- /.block-text -->
+  
+</div><!-- /.container -->
+
   <section id="vaccins">
         <h2>C'est quoi un vaccin?</h2>
         <p>La vaccination est une protection contre une maladie infectieuse potentielle.</p>
