@@ -11,6 +11,7 @@ $users = $query ->fetchAll();
 if (!empty($_POST['newvaccins'])) {
   header ('Location: newvaccins.php');
 }
+
 ?>
 <?php include('inc/headerback.php');?>
 
