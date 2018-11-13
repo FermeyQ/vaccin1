@@ -21,12 +21,10 @@
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    <li><a href="../moncarnet.php"><i class="fa fa-user fa-fw"></i> Mon Carnet</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    <li><a href="../deconnection.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -39,7 +37,7 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="../index.php"><i class="fa fa-edit fa-fw"></i>Clients</a>
+                        <a href="../index.php"><i class="fa fa-edit fa-fw"></i>Retour au site</a>
                     </li>
                     <li>
                         <a href="listusers.php"><i class="fa fa-edit fa-fw"></i>List Users</a>
