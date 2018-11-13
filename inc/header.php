@@ -6,9 +6,24 @@
     <link rel="stylesheet" href="asset/css/style.css">
   </head>
   <body>
-  <div class="wrap">
-    <header id = "header">
+
+ <header>
+
+  <div class="container">
+    <div class="logo-container">
+      <a href="http://localhost/vaccin/vaccin1/index.php" class="logo">
+        <img title="MaVaccination" alt="MaVaccination.net" src="asset/image/logo.png">
+      </a>
+
+      <div class="title">
+        <div class="line1">Mon carnet de vaccination électronique</div>
+        <div class="line2">Pour être mieux vacciné, sans défaut ni excès</div>
+      </div>
+    </div>
+  </div>
+
       <!--Le menu NAV-->
+     <div class="wrap">
       <nav>
         <ul>
         <li><a href="index.php">Accueil</a></li>
@@ -25,5 +40,6 @@
         <?php } ?>
         </ul>
       </nav>
-    </header>
-  </div>
+     </div>
+
+ </header>

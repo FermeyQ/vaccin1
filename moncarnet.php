@@ -3,10 +3,15 @@
 
 
 
-<div class="wrap">
+<?php $title = 'Mon carnet';?>
 <?php
-$title = 'Mon carnet';
-?>
+$sql = "SELECT * FROM vaccin1_user ";
+$query = $pdo -> prepare($sql);
+$query -> execute();
+$users = $query ->fetchAll();
+
+
+
 <?php include ('inc/header.php'); ?>
 
   <form class="" action="index.html" method="post">
@@ -18,4 +23,3 @@ $title = 'Mon carnet';
 user vaccin date
 
 <?php include ('inc/footer.php') ?>
-</div>
