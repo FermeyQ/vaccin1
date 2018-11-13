@@ -9,34 +9,10 @@ $sql = "SELECT * FROM vaccin1_vaccin";
 $query = $pdo -> prepare($sql);
 $query -> execute();
 $users = $query ->fetchAll();
-
-<<<<<<< HEAD
-<?php $title = 'Mon carnet';?>
-<?php
-$sql = "SELECT * FROM vaccin1_user ";
-$query = $pdo -> prepare($sql);
-$query -> execute();
-$users = $query ->fetchAll();
-=======
 ?>
->>>>>>> bd38c1d6d219fc2e59bcb15e95b015e3978e53bf
 
 <?php include('inc/header.php'); ?>
 
-<<<<<<< HEAD
-
-<?php include ('inc/header.php'); ?>
-
-  <form class="" action="index.html" method="post">
-
-  </form>
-
-
-
-user vaccin date
-
-<?php include ('inc/footer.php') ?>
-=======
 <body>
   <br>
   <br>
@@ -64,4 +40,3 @@ user vaccin date
 
 <?php include('inc/footer.php') ?>
 </div>
->>>>>>> bd38c1d6d219fc2e59bcb15e95b015e3978e53bf
