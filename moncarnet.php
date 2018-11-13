@@ -10,9 +10,18 @@ $query = $pdo -> prepare($sql);
 $query -> execute();
 $users = $query ->fetchAll();
 ?>
+<<<<<<< HEAD
 
 <?php include('inc/header.php'); ?>
 
+=======
+<?php include('inc/header.php'); ?>
+  <form class="" action="index.html" method="post">
+
+  </form>
+user vaccin date
+<?php include ('inc/footer.php') ?>
+>>>>>>> 9dbf027c7af592ca81e5b918910ac3f41b6dc74a
 <body>
   <br>
   <br>

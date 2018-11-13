@@ -6,31 +6,31 @@ $error = array();
 $id = $_GET['id'];
 if (!empty($id) && is_numeric($_GET['id'])) {
   $id = urldecode($_GET['id']);
-  $sql ="SELECT * FROM vaccin1_vaccin WHERE id = $id";
+  $sql ="SELECT * FROM vaccin1_user WHERE id = $id";
   $query = $pdo -> prepare($sql);
   $query -> execute();
-  $vaccin = $query -> fetch();
+  $user = $query -> fetch();
 }
 if (!empty($_POST['submitted'])) {
     // faille XSS
-    $editvaccins = trim(strip_tags($_POST['editvaccin']));
-    $editmaladie = trim(strip_tags($_POST['editmaladie']));
+    $editname = trim(strip_tags($_POST['editname']));
+    $editemail = trim(strip_tags($_POST['editemail']));
     // verif vaccin exist
-    if (empty($editvaccins)) {
-        $error['editvaccin'] = 'Veuillez renseigner un nom de vaccin !';
+    if (empty($editname)) {
+        $error['editname'] = 'Veuillez renseigner un nom !';
     }
     // verif maladie
-    if (empty($editmaladie)) {
-        $error['editmaladie'] = 'Veuillez renseigner un nom de maladie !';
+    if (empty($editemail)) {
+        $error['editemail'] = 'Veuillez renseigner un email !';
     }
     // si pas d'erreurs
     if (count($error) == 0) {
-        $sql = "UPDATE vaccin1_vaccin SET nom_vaccin = :editvaccins, nom_maladie = :editmaladie WHERE id=$id";
+        $sql = "UPDATE vaccin1_user SET name = :editname, email = :editemail WHERE id=$id";
         $query = $pdo->prepare($sql);
-        $query->bindValue(':editvaccins', $editvaccins, PDO::PARAM_STR);
-        $query ->bindValue (':editmaladie', $editmaladie, PDO::PARAM_STR);
+        $query->bindValue(':editname', $editname, PDO::PARAM_STR);
+        $query ->bindValue (':editemail', $editemail, PDO::PARAM_STR);
         $query ->execute();
-        header ('Location: listvaccins.php');
+        header ('Location:listusers.php');
     }
 }
 ?>
@@ -45,12 +45,12 @@ if (!empty($_POST['submitted'])) {
                   <h1 class="page-header">New Vaccins</h1>
                   <a href="listvaccins.php">Retour à la liste</a>
                   <form action="" method="post">
-                    <label for="editvaccin">Modifier le vaccin</label>
-                    <span><?php if (!empty($error['editvaccin'])) {echo $error['editvaccin'];} ?></span>
-                    <input type="text" name="editvaccin" value="<?php echo $vaccin['nom_vaccin'] ?>">
-                    <label for="editmaladie">modifier la maladie</label>
-                    <span><?php if (!empty($error['editmaladie'])) {echo $error['editmaladie'];} ?></span>
-                    <input type="text" name="editmaladie" value="<?php echo $vaccin['nom_maladie'] ?>">
+                    <label for="editname">Modifier le nom</label>
+                    <span><?php if (!empty($error['editname'])) {echo $error['editname'];} ?></span>
+                    <input type="text" name="editname" value="<?php echo $user['name'] ?>">
+                    <label for="editemail">modifier l' email'</label>
+                    <span><?php if (!empty($error['editemail'])) {echo $error['editemail'];} ?></span>
+                    <input type="text" name="editemail" value="<?php echo $user['email'] ?>">
                     <input type="submit" name="submitted" value="Modifier">
                   </form>
                 <!-- /.col-lg-12 -->
