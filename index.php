@@ -1,5 +1,5 @@
 <?php include ('inc/fonction.php') ?>
-<?php include ('inc/pdo.php');
+<?php include ('inc/pdo/pdo.php');
 $title = 'Accueil';
 ?>
 <?php include ('inc/header.php') ?>

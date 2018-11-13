@@ -1,5 +1,5 @@
 <?php include('../inc/fonction.php') ?>
-<?php include('../inc/pdo.php') ?>
+<?php include('../inc/pdo/pdo.php') ?>
 <?php
 $title = 'Delete users';
 $id = $_GET['id'];

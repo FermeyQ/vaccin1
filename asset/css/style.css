@@ -94,6 +94,7 @@ section {
 
 section .paraf{
   float: left;
+  margin: auto;
 }
 
 /*------------------------RESPONSIVE--------------------------------*/
