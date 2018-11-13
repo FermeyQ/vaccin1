@@ -31,13 +31,12 @@ img {
   width: 100px;
 }
 
-header nav ul{
+header nav {
   float: right;
-  margin: auto;
-  
   border-radius: 5px;
   padding:13px;
   background-color: #009044;
+  margin-top: -54px;
 }
 
 header nav ul li{
@@ -64,12 +63,6 @@ header nav ul li a:hover{
   text-decoration: underline;
 }
 
-.wrap{
-  width: 100%;
-  max-width:1024px;
-  margin: auto;
-}
-
 h1{
   font-size: 2em;
   color: #fff;
@@ -93,7 +86,7 @@ div h2 a{
     color: #fff;
 }
 
-.wrap section {
+section {
   margin: auto;
   padding: 15px;
 }
@@ -102,22 +95,21 @@ div h2 a{
 
 @media screen and (max-width:700px) {
 
-  #header nav{
-    height: 50px;
+header nav{
+  height: 50px;
+}
 
-  }
+header nav ul li {
+  width: 100%;
+  padding:15px;
+  margin: auto;
+}
 
-  #header nav ul li {
-    width: 100%;
-    padding:15px;
-    margin: auto;
-  }
-
-#header{
+header{
     background-color:rgba(235, 234, 216,.5);
 }
 
-#header h2{
+header h2{
   width: 100%;
   text-align: center;
 }

@@ -37,3 +37,4 @@ if (!empty($_POST['submitted'])){
   <input type="text" name="email" value="<?php if(!empty($_POST['email'])){echo $_POST['email'];} ?>">
   <input type="submit" name="submitted" value="Modifier mot de passe">
 </form>
+<?php include('inc/footer.php');

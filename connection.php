@@ -1,12 +1,10 @@
 <?php include('inc/pdo.php'); ?>
 <?php include('inc/fonction.php'); ?>
-<div class="wrap">
-  <?php
-  $title = 'Se connecter';
-
-  $errors = array();
-    //form soumis
-  if (!empty($_POST['submitted'])) {
+<?php
+$title = 'Se connecter';
+$errors = array();
+//form soumis
+if (!empty($_POST['submitted'])) {
       //Protection XSS
       $login = trim(strip_tags($_POST['login']));
       $password = trim(strip_tags($_POST['password']));
@@ -35,11 +33,8 @@
       }
   }
   ?>
-
   <?php include('inc/header.php'); ?>
-
   <h1>Se connecter</h1>
-
   <form class="" action="" method="post">
     <label for="login">Pseudo ou Email</label>
     <span><?php if (!empty($errors['login'])) {
@@ -56,6 +51,4 @@
     <input type="submit" name="submitted" value="Se connecter">
   </form>
   <a href="passwordforget.php">Mot de passe oublié</a>
-
-  <?php include('inc/footer.php'); ?>
-</div>
+  <?php include('inc/footer.php');
