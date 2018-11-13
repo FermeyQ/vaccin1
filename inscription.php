@@ -76,8 +76,9 @@ if (!empty($_POST['submitted'])) {
 }
 ?>
 <?php include 'inc/header.php' ?>
-<div class="wrap">
   <h2>S'inscrire</h2>
+
+<div class="inscriptions">
   <!-- formulaire d'inscriptions -->
   <form action="" method="post">
       <!-- form name -->

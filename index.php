@@ -52,12 +52,16 @@ $title = 'Accueil';
 </div><!-- /.container -->
 
   <section id="vaccins">
+
         <h2>C'est quoi un vaccin?</h2>
         <p>La vaccination est une protection contre une maladie infectieuse potentielle.</p>
+
         <h2>Principe du vaccin</h2>
         <p>Il consiste à injecter dans le corps un agent infectieux (virus ou bactérie), sous une forme inoffensive mais stimulant la réponse immunitaire de l'organisme. Le système immunitaire disposant d'une forme de mémoire, une exposition ultérieure à l'agent infectieux déclenchera une réponse rapide et donc plus efficace. L'agent est reconnu par une ou plusieurs molécules spécifiques et constitue l'antigène. Le système immunitaire répond par la production d'anticorps spécialement dirigés contre lui et fabriqués par des cellules mémoires (lymphocytes B et T). Un vaccin est donc spécifique d'une maladie.</p>
+
         <h2>Vaccin : qu'injecte-t-on ?</h2>
         <p>Le vaccin peut être un agent inactivé (dépourvu de matériel génétique) ou atténué (c'est alors une forme voisine mais non pathogène). Ce peut être également un sous-ensemble d'un virus voire une simple toxine traitée pour qu'elle soit sans effet pathogène mais qu'elle conserve ses propriétés antigéniques (cas du vaccin contre la diphtérie par exemple).</p>
+
         <h2>Utilisation de la vaccination</h2>
         <p>La vaccination a un effet protecteur sur un individu mais, pour une maladie contagieuse, une vaccination massive protège la population toute entière en ralentissant ou en empêchant la propagation de l'agent infectieux.</p>
 
@@ -69,6 +73,7 @@ $title = 'Accueil';
 
         <h2>Quels sont les vaccins obligatoires?</h2>
         <p>Les 11 vaccinations obligatoires sont les suivantes :</p>
+
         <ul class="vaccins_oblig">
           <li>diphtérie, tétanos et poliomyélite (DTP)</li>
           <li>coqueluche : TETRAVAC-ACELLULAIRE, INFANRIX, INFANRIX HEXA, HEXYON, VAXELIS</li>
