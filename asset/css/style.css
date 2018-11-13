@@ -1,40 +1,42 @@
 @import 'reset.css';
 
-body{
-  font: 400 16px/1.3 Verdana, Arial,sans-serif;
+body {
+  font-family: 'Roboto', serif, Verdana, Arial, sans-serif;
+  font-size: 17px;
+  line height: 1.5;
   color: #000;
-  background-color: #fff;
+  margin: : auto;
+  padding: 15px;
 }
 
 header {
-  margin: 6px;
+  margin: auto;
   padding: 15px;
   background-color: #009044;
   border-radius: 6px;
 }
 
-header .container .logo{
+body .container .titre {
+  margin: auto;
+  text-align: left;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 20px;
+}
+
+img {
   margin: auto;
   float: left;
-}
-
-header .container .titre{
-  margin: auto;
-  padding: 15px;
-  text-align: left;
-}
-
-header img {
+  padding-left: 20px;
   width: 100px;
 }
 
-header nav ul{
+header nav {
   float: right;
-  margin: auto;
-  max-width: 1024px;
   border-radius: 5px;
   padding:13px;
   background-color: #009044;
+  margin-top: -54px;
 }
 
 header nav ul li{
@@ -56,14 +58,9 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-  color: #25527f;
-  background-color: #fff;
-}
-
-.wrap{
-  width: 100%;
-  max-width:1024px;
-  margin: auto;
+  background-color: #00af54;
+  border-radius: 10px;
+  text-decoration: underline;
 }
 
 h1{
@@ -89,7 +86,7 @@ div h2 a{
     color: #fff;
 }
 
-.wrap section {
+section {
   margin: auto;
   padding: 15px;
 }
@@ -98,22 +95,21 @@ div h2 a{
 
 @media screen and (max-width:700px) {
 
-  #header nav{
-    height: 50px;
+header nav{
+  height: 50px;
+}
 
-  }
+header nav ul li {
+  width: 100%;
+  padding:15px;
+  margin: auto;
+}
 
-  #header nav ul li {
-    width: 100%;
-    padding:15px;
-    margin: auto;
-  }
-
-#header{
+header{
     background-color:rgba(235, 234, 216,.5);
 }
 
-#header h2{
+header h2{
   width: 100%;
   text-align: center;
 }

@@ -10,7 +10,6 @@ if (!empty($_POST['submitted'])) {
     $email = trim(strip_tags($_POST['email']));
     $password = trim(strip_tags($_POST['password']));
     $password2 = trim(strip_tags($_POST['password2']));
-
     // VALIDATION
     // validation name
     if (!empty($name)) {
@@ -32,7 +31,6 @@ if (!empty($_POST['submitted'])) {
     } else {
         $error['name'] = 'renseigner un name';
     }
-
     // validation email
     if (!empty($email)) {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -51,7 +49,6 @@ if (!empty($_POST['submitted'])) {
     } else {
         $error['email'] = 'renseigner un email';
     }
-
     // validation password
     if (!empty($password) && !empty($password2)) {
         if ($password != $password2) {
@@ -63,7 +60,6 @@ if (!empty($_POST['submitted'])) {
     } else {
         $error['password'] = 'Veuillez entrer un mot de passe';
     }
-
     // SI AUCUNE ERROR
     if (count($error) == 0) {
         $success = true;
@@ -84,28 +80,23 @@ if (!empty($_POST['submitted'])) {
   <h2>S'inscrire</h2>
   <!-- formulaire d'inscriptions -->
   <form action="" method="post">
-
       <!-- form name -->
       <label for="name">name *</label>
       <span class="error"><?php if (!empty($error['name'])) {echo $error['name'];}?></span>
       <input type="text" name="name" value="<?php if (!empty($_POST['name'])) {echo $_POST['name'];}?>"
           placeholder="jeanjean">
-
       <!-- form email -->
       <label for="email">Email *</label>
       <span class="error"><?php if (!empty($error['email'])) {echo $error['email'];}?></span>
       <input type="email" name="email" value="<?php if (!empty($_POST['email'])) {echo $_POST['email'];}?>"
           placeholder="jeanjean@gmail.com">
-
       <!-- form password -->
       <label for="password">Password *</label>
       <span class="error"><?php if (!empty($error['password'])) {echo $error['password'];}?></span>
       <input type="password" name="password" value="">
-
       <!-- form password2 -->
       <label for="password2">Confirm Password *</label>
       <input type="password" name="password2" value="">
-
       <!-- form submit -->
       <input type="submit" name="submitted" value="Envoyer">
   </form>

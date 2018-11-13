@@ -9,10 +9,8 @@ $query -> execute();
 $vaccins = $query ->fetchAll();
 ?>
 <?php include('inc/headerback.php');?>
-
 <body>
-    <?php include('inc/navback.php');?>
-
+<?php include('inc/navback.php');?>
     <!-- Page Content -->
     <div id="page-wrapper">
         <div class="container-fluid">
