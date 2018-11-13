@@ -3,7 +3,7 @@
 
 <?php $title = 'Mon carnet';?>
 
-?>
+
 
 <?php include('inc/header.php'); ?>
 
