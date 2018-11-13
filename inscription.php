@@ -82,7 +82,6 @@ if (!empty($_POST['submitted'])) {
   <!-- formulaire d'inscriptions -->
   <form action="" method="post">
       <!-- form name -->
-      <div class="form">
       <label for="name">name *</label>
       <span class="error"><?php if (!empty($error['name'])) {echo $error['name'];}?></span>
       <input type="text" name="name" value="<?php if (!empty($_POST['name'])) {echo $_POST['name'];}?>"
@@ -102,6 +101,5 @@ if (!empty($_POST['submitted'])) {
       <!-- form submit -->
       <input type="submit" name="submitted" value="Envoyer">
   </form>
- </div>
 </div>
 <?php include 'inc/footer.php';

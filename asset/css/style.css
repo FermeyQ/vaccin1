@@ -44,9 +44,6 @@ header nav {
 header nav ul li{
   float: left;
   margin: auto;
-  /* display: inline-block; */
-  /* list-style-type: none; */
-  /* text-align: center; */
 }
 
 header nav ul li a{
@@ -97,10 +94,10 @@ body .inscriptions{
 }
 
 body .inscriptions label{
-  background-color: red;
+  background-color: brown;
   margin: auto;
   padding: 5px;
-
+  border-radius: 50px;
 }
 
 body .inscriptions input{
@@ -143,11 +140,11 @@ header h2{
 
 /*---------------------FOOTER------------------*/
 
-#footer{
+footer{
   display: inline-block;
 }
 
-#footer{
+footer{
   width: 100%;
   margin: 0 auto;
   background-color: #DBD5BB;
