@@ -28,13 +28,12 @@ header img {
   width: 100px;
 }
 
-header nav ul{
+header nav {
   float: right;
-  margin: auto;
-  max-width: 1024px;
   border-radius: 5px;
   padding:13px;
   background-color: #009044;
+  margin-top: -50px;
 }
 
 header nav ul li{
