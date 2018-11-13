@@ -20,13 +20,23 @@ $vaccins = $query ->fetchAll();
                 <!-- /.col-lg-12 -->
                 <a href="newvaccins.php">New vaccins</a>
                 <br>
+                <div class="form">
+                  <table>
+                  <tr>
+                    <th class="form">Vaccin</th>
+                    <th class="form">Maladie</th>
+                  </tr>
                 <?php
-                    foreach ($vaccins as $vaccin) {
-                        echo '<span>Nom du vaccin : </span>' . $vaccin['nom_vaccin']. ' / ';
-                        echo '<span>Nom de la(les) maladie traitée(s) : </span>' . $vaccin['nom_maladie'] .'<br>';
-                        echo '<a href = "editvaccins.php?id='. urlencode($vaccin['id']) . '">Edit vaccins</a>'.' ';
-                        echo '<a href = "deletevaccins.php?id='. urlencode($vaccin['id']) . '">Delete vaccins</a><br>';
+                    foreach ($vaccins as $vaccin) { ?>
+                  <tr>
+                      <td><?php echo $vaccin['nom_vaccin']. '  ';?></td>
+                      <td><?php echo $vaccin['nom_maladie'].'  ';?></td>
+                      <td><?php echo '<a href = "editvaccins.php?id='. urlencode($vaccin['id']) . '">Edit vaccins</a>'.' ';?>
+                      <td><?php echo '<a href = "deletevaccins.php?id='. urlencode($vaccin['id']) . '">Delete vaccins</a>'.'<br>';
                       }?>
+                  </tr>
+                  </table>
+                </div>
             </div>
             <!-- /.row -->
         </div>

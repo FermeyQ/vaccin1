@@ -17,13 +17,24 @@ $users = $query ->fetchAll();
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">List User</h1>
+                    <div class="form">
+                      <table>
+                      <tr>
+                        <th class="form">Nom</th>
+                        <th class="form">Email</th>
+
+                      </tr>
                     <?php
-                        foreach ($users as $user) {
-                            echo $user['name']. ' / ';
-                            echo $user['email'] .'<br>';
-                            echo '<a href = "editusers.php?id='. urlencode($user['id']) . '">Edit users</a>'.' ';
-                            echo '<a href = "deleteusers.php?id='. urlencode($user['id']) . '">Delete users</a><br>';
+                        foreach ($users as $user) { ?>
+                      <tr>
+                        <td><?php echo $user['name']. '  ';?></td>
+                        <td><?php echo $user['email'].' ';?></td>
+                        <td><?php echo '<a href = "editusers.php?id='. urlencode($user['id']) . '">Edit users</a>'.' ';?>
+                        <td><?php echo '<a href = "deleteusers.php?id='. urlencode($user['id']) . '">Delete users</a>'.'<br>';
                           }?>
+                      </tr>
+                    </table>
+                    </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->

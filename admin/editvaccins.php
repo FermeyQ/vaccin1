@@ -45,13 +45,13 @@ if (!empty($_POST['submitted'])) {
                   <h1 class="page-header">New Vaccins</h1>
                   <a href="listvaccins.php">Retour à la liste</a>
                   <form action="" method="post">
-                    <label for="editvaccin">Modifier le vaccin</label>
-                    <span><?php if (!empty($error['editvaccin'])) {echo $error['editvaccin'];} ?></span>
-                    <input type="text" name="editvaccin" value="<?php echo $vaccin['nom_vaccin'] ?>">
-                    <label for="editmaladie">modifier la maladie</label>
-                    <span><?php if (!empty($error['editmaladie'])) {echo $error['editmaladie'];} ?></span>
-                    <input type="text" name="editmaladie" value="<?php echo $vaccin['nom_maladie'] ?>">
-                    <input type="submit" name="submitted" value="Modifier">
+                      <label for="editvaccin">Modifier le vaccin</label>
+                      <span><?php if (!empty($error['editvaccin'])) {echo $error['editvaccin'];} ?></span>
+                      <input type="text" name="editvaccin" value="<?php echo $vaccin['nom_vaccin'] ?>">
+                      <label for="editmaladie">modifier la maladie</label>
+                      <span><?php if (!empty($error['editmaladie'])) {echo $error['editmaladie'];} ?></span>
+                      <input type="text" name="editmaladie" value="<?php echo $vaccin['nom_maladie'] ?>">
+                      <input type="submit" name="submitted" value="Modifier">
                   </form>
                 <!-- /.col-lg-12 -->
                 </div>
