@@ -15,13 +15,13 @@ header {
 
 header .container .logo{
   margin: auto;
-  padding: 30px;
   float: left;
 }
 
-header .container .title{
+header .container .titre{
   margin: auto;
-  padding: 10px;
+  padding: 15px;
+  text-align: left;
 
 }
 
@@ -31,25 +31,26 @@ img {
 
 header nav ul{
   float: right;
-  margin: auto;
+  margin: 0;
   /* width: 20px; */
   max-width: 1024px;
   border-radius: 5px;
-  padding:16px;
-  background-color: #00e76d;
+  padding:13px;
+  background-color: #009a49;
   /* z-index: 3; */
 }
 
 header nav ul li{
   float: left;
-  display: inline-block;
-  list-style-type: none;
-  text-align: center;
+  margin: auto;
+  /* display: inline-block; */
+  /* list-style-type: none; */
+  /* text-align: center; */
 }
 
 header nav ul li a{
   color: #fff;
-  margin:25px 0;
+  margin: auto;
   padding: 15px;
   font-size: 1.3em;
   border-radius: 5px;
@@ -71,7 +72,6 @@ header nav ul li a:hover{
 .bolder{
   font-weight: bold;
 }
-
 
 h1{
   font-size: 2em;

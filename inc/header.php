@@ -15,7 +15,7 @@
         <img title="MaVaccination" alt="MaVaccination.net" src="asset/image/logo.png">
       </a>
 
-      <div class="title">
+      <div class="titre">
         <div class="line1">Mon carnet de vaccination électronique</div>
         <div class="line2">Pour être mieux vacciné, sans défaut ni excès</div>
       </div>
@@ -23,7 +23,6 @@
   </div>
 
       <!--Le menu NAV-->
-     <div class="wrap">
       <nav>
         <ul>
         <li><a href="index.php">Accueil</a></li>
