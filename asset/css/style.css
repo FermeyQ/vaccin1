@@ -5,37 +5,36 @@ body {
   font-size: 17px;
   line height: 1.5;
   color: #000;
-  margin: : 10px;
-  padding: 20px;
+  margin: : auto;
+  padding: 15px;
 }
 
 header {
-  margin: 6px;
+  margin: auto;
   padding: 15px;
   background-color: #009044;
   border-radius: 6px;
 }
 
-header .container .logo{
-  margin: auto;
-  float: left;
-}
-
 body .container .titre {
+  margin: auto;
   text-align: left;
   font-weight: bold;
-  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
 }
 
 img {
+  margin: auto;
   float: left;
+  padding-left: 20px;
   width: 100px;
 }
 
 header nav ul{
   float: right;
   margin: auto;
-  max-width: 1024px;
+  
   border-radius: 5px;
   padding:13px;
   background-color: #009044;
@@ -59,7 +58,7 @@ header nav ul li a{
   width: 100%;
 }
 
-header a:hover{
+header nav ul li a:hover{
   background-color: #00af54;
   border-radius: 10px;
   text-decoration: underline;
