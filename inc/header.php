@@ -16,8 +16,7 @@
       </a>
 
       <div class="titre">
-        <div class="line1">Mtitre</div>
-        <div class="line2">titre1 excès</div>
+        <div class="line1">My little carnet</div>
       </div>
     </div>
   </div>
@@ -39,6 +38,4 @@
         <?php } ?>
         </ul>
       </nav>
-     </div>
-
- </header>
+     </header>
