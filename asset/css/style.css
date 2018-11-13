@@ -1,7 +1,7 @@
 @import 'reset.css';
 
 body {
-  font-family: 'Roboto', serif, Verdana, Arial, sans-serif;
+  font-family: 'Roboto', Verdana, serif, Arial, sans-serif;
   font-size: 17px;
   line height: 1.5;
   color: #000;
@@ -12,7 +12,7 @@ body {
 
 header {
   margin: auto;
-  padding: 15px;
+  padding: 10px;
   background-color: #009044;
   border-radius: 6px;
 }
@@ -29,6 +29,7 @@ img {
   margin: auto;
   float: left;
   padding-left: 20px;
+  padding-top: 5px;
   width: 100px;
 }
 
@@ -66,7 +67,7 @@ header nav ul li a:hover{
 
 h1{
   font-size: 2em;
-  color: #fff;
+  color: red;
   padding:10px;
   height:80px;
   width: 100%;
@@ -82,10 +83,6 @@ h2{
   background-color: #25527f;
 }
 
-div h2 a{
-    list-style-type: none;
-    color: #fff;
-}
 
 section {
   margin: auto;
