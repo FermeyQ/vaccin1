@@ -5,9 +5,10 @@ body {
   font-size: 17px;
   line height: 1.5;
   color: #000;
-  margin: : auto;
-  padding: 15px;
+  margin: auto;
+  padding: 40px;
 }
+
 
 header {
   margin: auto;
@@ -42,7 +43,7 @@ header nav {
 header nav ul li{
   float: left;
   margin: auto;
-  display: inline-block;
+  /* display: inline-block; */
   /* list-style-type: none; */
   /* text-align: center; */
 }
@@ -89,6 +90,10 @@ div h2 a{
 section {
   margin: auto;
   padding: 15px;
+}
+
+section .paraf{
+  float: left;
 }
 
 /*------------------------RESPONSIVE--------------------------------*/

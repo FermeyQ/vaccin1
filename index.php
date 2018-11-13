@@ -4,8 +4,10 @@ $title = 'Accueil';
 ?>
 <?php include ('inc/header.php') ?>
   <section id="vaccins">
+       <div class="paraf">
         <h2>C'est quoi un vaccin?</h2>
         <p>La vaccination est une protection contre une maladie infectieuse potentielle.</p>
+       </div>
         <h2>Principe du vaccin</h2>
         <p>Il consiste à injecter dans le corps un agent infectieux (virus ou bactérie), sous une forme inoffensive mais stimulant la réponse immunitaire de l'organisme. Le système immunitaire disposant d'une forme de mémoire, une exposition ultérieure à l'agent infectieux déclenchera une réponse rapide et donc plus efficace. L'agent est reconnu par une ou plusieurs molécules spécifiques et constitue l'antigène. Le système immunitaire répond par la production d'anticorps spécialement dirigés contre lui et fabriqués par des cellules mémoires (lymphocytes B et T). Un vaccin est donc spécifique d'une maladie.</p>
         <h2>Vaccin : qu'injecte-t-on ?</h2>
