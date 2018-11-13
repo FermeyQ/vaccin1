@@ -1,4 +1,4 @@
-<?php include('inc/pdo.php'); ?>
+<?php include('inc/pdo/pdo.php'); ?>
 <?php include('inc/fonction.php'); ?>
 <?php
 $title = 'Se connecter';
