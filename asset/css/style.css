@@ -6,7 +6,7 @@ body {
   line height: 1.5;
   color: #000;
   margin: auto;
-  padding: 40px;
+  padding: 30px;
 }
 
 
@@ -89,10 +89,29 @@ section {
   padding: 15px;
 }
 
-section .paraf{
-  float: left;
+body .inscriptions{
   margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 1px 1px #000, -1px 1px #000, 1px 0 1px #000;
 }
+
+body .inscriptions label{
+  background-color: red;
+  margin: auto;
+  padding: 5px;
+
+}
+
+body .inscriptions input{
+  margin: auto;
+  padding: 5px;
+  border-radius: 4px;
+
+}
+
+
+
 
 /*------------------------RESPONSIVE--------------------------------*/
 

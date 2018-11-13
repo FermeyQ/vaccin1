@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title><?php echo $title ?></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
   </head>
   <body>
