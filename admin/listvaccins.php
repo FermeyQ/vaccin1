@@ -4,13 +4,12 @@
 
 <?php
 $error = array();
-$sql = "SELECT nom_vaccin, nom_maladie FROM vaccin1_vaccin";
+$sql = "SELECT * FROM vaccin1_vaccin";
 $query = $pdo -> prepare($sql);
 $query -> execute();
 $users = $query ->fetchAll();
-if (!empty($_POST['newvaccins'])) {
-  header ('Location: newvaccins.php');
-}
+
+
 ?>
 <?php include('inc/headerback.php');?>
 
@@ -25,25 +24,16 @@ if (!empty($_POST['newvaccins'])) {
                     <h1 class="page-header">List Vaccins</h1>
                 </div>
                 <!-- /.col-lg-12 -->
-                <form action="#" method="post">
-                <input type="submit" name="newvaccins" id="newvaccins" value="NEW VACCIN">
+                <a href="newvaccins.php">New vaccins</a>
                 <br>
 
                 </form>
                 <?php
                     foreach ($users as $user) {
                         echo '<span>Nom du vaccin : </span>' . $user['nom_vaccin']. ' / ';
-                        echo '<span>Nom de la maladie traitée : </span>' . $user['nom_maladie']; ?>
-                <!-- formulaire -->
-                <form action="#" method="post">
-                    <label for="editusers"></label>
-                    <input type="submit" name="editvaccins" id="editvaccins" value="EDIT">
-                    <label for="editusers"></label>
-                    <label for="deleteusers"></label>
-                    <input type="submit" name="deletevaccins" id="deletevaccins" value="DELETE">
-                </form>
-                <?php
-                    }?>
+                        echo '<span>Nom de la maladie traitée : </span>' . $user['nom_maladie'] .'<br>';
+                        echo '<a href = "editvaccins.php?id='. $user['id'] . '">Edit vaccins</a><br>';
+                      }?>
             </div>
             <!-- /.row -->
         </div>

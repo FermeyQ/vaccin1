@@ -29,10 +29,11 @@ if (!empty($_POST['submitted'])) {
     }
     // si pas d'erreurs
     if (count($error) == 0) {
-        $sql = "INSERT INTO vaccin1_vaccin (nom_vaccin, nom_maladie VALUES (:nom_vaccin, :nom_maladie)";
+        $sql = "INSERT INTO vaccin1_vaccin (nom_vaccin, nom_maladie) VALUES (:newvaccins, :newmaladie)";
         $query = $pdo->prepare($sql);
         $query->bindValue(':newvaccins', $newvaccins, PDO::PARAM_STR);
-        $query ->exectute();
+        $query ->bindValue (':newmaladie', $newmaladie, PDO::PARAM_STR);
+        $query ->execute();
         header ('location: newvaccins.php');
     }
 }
