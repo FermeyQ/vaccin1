@@ -1,16 +1,29 @@
 <?php include 'inc/fonction.php' ?>
 <?php include 'inc/pdo.php' ?>
 
+<?php $title = 'Mon carnet';?>
 
+<?php $error = array();
+// requete affiche tableau vaccins
+$sql = "SELECT * FROM vaccin1_vaccin";
+$query = $pdo -> prepare($sql);
+$query -> execute();
+$users = $query ->fetchAll();
 
+<<<<<<< HEAD
 <?php $title = 'Mon carnet';?>
 <?php
 $sql = "SELECT * FROM vaccin1_user ";
 $query = $pdo -> prepare($sql);
 $query -> execute();
 $users = $query ->fetchAll();
+=======
+?>
+>>>>>>> bd38c1d6d219fc2e59bcb15e95b015e3978e53bf
 
+<?php include('inc/header.php'); ?>
 
+<<<<<<< HEAD
 
 <?php include ('inc/header.php'); ?>
 
@@ -23,3 +36,32 @@ $users = $query ->fetchAll();
 user vaccin date
 
 <?php include ('inc/footer.php') ?>
+=======
+<body>
+  <br>
+  <br>
+  <br>
+  <h1>Programmer une vaccination</h1>
+
+  <!-- tableau des vaccins a programmer -->
+  <table>
+    <tr>
+      <th>Nom du vaccin</th>
+      <th>Nom de la maladie traitée</th>
+    </tr>
+    <?php foreach ($users as $user) {
+    ?>
+    <tr>
+      <td><?php echo $user['nom_vaccin']?></td>
+      <td><?php echo $user['nom_maladie']?></td>
+      <td><?php echo '<a href="programmervaccins.php?id='. $user['id'].'">Programmer ce vaccin</a>'?></td>
+    </tr>
+    <?php
+} ?>
+  </table>
+  <br>
+</body>
+
+<?php include('inc/footer.php') ?>
+</div>
+>>>>>>> bd38c1d6d219fc2e59bcb15e95b015e3978e53bf

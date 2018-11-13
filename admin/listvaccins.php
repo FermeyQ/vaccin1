@@ -33,7 +33,7 @@ $users = $query ->fetchAll();
                         echo '<span>Nom du vaccin : </span>' . $user['nom_vaccin']. ' / ';
                         echo '<span>Nom de la maladie traitée : </span>' . $user['nom_maladie'] .'<br>';
                         echo '<a href = "editvaccins.php?id='. $user['id'] . '">Edit vaccins</a><br>';
-                      }?>
+                    }?>
             </div>
             <!-- /.row -->
         </div>

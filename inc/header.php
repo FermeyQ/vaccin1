@@ -16,8 +16,8 @@
       </a>
 
       <div class="titre">
-        <div class="line1">Mon carnet de vaccination électronique</div>
-        <div class="line2">Pour être mieux vacciné, sans défaut ni excès</div>
+        <div class="line1">Mtitre</div>
+        <div class="line2">titre1 excès</div>
       </div>
     </div>
   </div>

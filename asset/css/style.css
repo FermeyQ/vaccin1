@@ -9,7 +9,7 @@ body{
 header {
   margin: 6px;
   padding: 15px;
-  background-color: #00a74f;
+  background-color: #009044;
   border-radius: 6px;
 }
 
@@ -22,28 +22,25 @@ header .container .titre{
   margin: auto;
   padding: 15px;
   text-align: left;
-
 }
 
-img {
+header img {
   width: 100px;
 }
 
 header nav ul{
   float: right;
-  margin: 0;
-  /* width: 20px; */
+  margin: auto;
   max-width: 1024px;
   border-radius: 5px;
   padding:13px;
-  background-color: #009a49;
-  /* z-index: 3; */
+  background-color: #009044;
 }
 
 header nav ul li{
   float: left;
   margin: auto;
-  /* display: inline-block; */
+  display: inline-block;
   /* list-style-type: none; */
   /* text-align: center; */
 }
@@ -67,10 +64,6 @@ header nav ul li a:hover{
   width: 100%;
   max-width:1024px;
   margin: auto;
-}
-
-.bolder{
-  font-weight: bold;
 }
 
 h1{
