@@ -3,31 +3,69 @@
 body{
   font: 400 16px/1.3 Verdana, Arial,sans-serif;
   color: #000;
-  background-image:url(" ../image/vaccination_bg.jpg");
+  background-color: #fff;
+}
 
+header {
+  margin: 6px;
+  padding: 15px;
+  background-color: #009044;
+  border-radius: 6px;
+}
+
+header .container .logo{
+  margin: auto;
+  float: left;
+}
+
+header .container .titre{
+  margin: auto;
+  padding: 15px;
+  text-align: left;
+}
+
+header img {
+  width: 100px;
+}
+
+header nav ul{
+  float: right;
+  margin: auto;
+  max-width: 1024px;
+  border-radius: 5px;
+  padding:13px;
+  background-color: #009044;
+}
+
+header nav ul li{
+  float: left;
+  margin: auto;
+  display: inline-block;
+  /* list-style-type: none; */
+  /* text-align: center; */
+}
+
+header nav ul li a{
+  color: #fff;
+  margin: auto;
+  padding: 15px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 100%;
+}
+
+header nav ul li a:hover{
+  color: #25527f;
+  background-color: #fff;
 }
 
 .wrap{
   width: 100%;
   max-width:1024px;
-  margin:0 auto;
+  margin: auto;
 }
 
-.bolder{
-  font-weight: bold;
-}
-
-#header{
-  background-color: ;
-}
-#logo{
-position: absolute;
-top:
-background-image:url(" ../image/logo.png");
-width: 10%;
-height: 40px;
-z-index: 6;
-}
 h1{
   font-size: 2em;
   color: #fff;
@@ -36,53 +74,24 @@ h1{
   width: 100%;
   text-align: center;
 }
+
 h2{
-  color: #fff;
-  margin:25px 0;
-  padding: 20px;
-  font-size: 1.3em;
-  border-radius: 5px;
-  background-color: #25527f;
-}
-#header nav ul{
-  position: fixed;
-  float: right;
-  top:0;
-  margin: auto;
-  width: 100%;
-  max-width: 1024px;
-  border-radius: 5px;
-  padding:16px;
-  background-color: #25527f;
-  z-index: 3;
-}
-#header nav ul li{
-  float: left;
-  display: inline-block;
-  list-style-type: none;
-  text-align: center;
-}
-header#header nav ul li a{
   color: #fff;
   margin:25px 0;
   padding: 15px;
   font-size: 1.3em;
   border-radius: 5px;
-  text-decoration: none;
-  width: 100%;
-}
-header#header nav ul li a:hover{
-  color: #25527f;
-  background-color: #fff;
-  width: 100%;
+  background-color: #25527f;
 }
 
 div h2 a{
     list-style-type: none;
     color: #fff;
 }
-#footer{
-  display: inline-block;
+
+.wrap section {
+  margin: auto;
+  padding: 15px;
 }
 
 /*------------------------RESPONSIVE--------------------------------*/
@@ -115,6 +124,11 @@ div h2 a{
 }
 
 /*---------------------FOOTER------------------*/
+
+#footer{
+  display: inline-block;
+}
+
 #footer{
   width: 100%;
   margin: 0 auto;

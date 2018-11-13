@@ -6,8 +6,22 @@
     <link rel="stylesheet" href="asset/css/style.css">
   </head>
   <body>
-  <div class="wrap">
-    <header id = "header">
+
+ <header>
+
+  <div class="container">
+    <div class="logo-container">
+      <a href="http://localhost/vaccin/vaccin1/index.php" class="logo">
+        <img title="MaVaccination" alt="MaVaccination.net" src="asset/image/logo.png">
+      </a>
+
+      <div class="titre">
+        <div class="line1">Mtitre</div>
+        <div class="line2">titre1 excès</div>
+      </div>
+    </div>
+  </div>
+
       <!--Le menu NAV-->
       <nav>
         <ul>
@@ -25,5 +39,6 @@
         <?php } ?>
         </ul>
       </nav>
-    </header>
-  </div>
+     </div>
+
+ </header>

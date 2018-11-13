@@ -23,12 +23,20 @@ $vaccins = $query ->fetchAll();
                 <a href="newvaccins.php">New vaccins</a>
                 <br>
                 <?php
+<<<<<<< HEAD
                     foreach ($vaccins as $vaccin) {
                         echo '<span>Nom du vaccin : </span>' . $vaccin['nom_vaccin']. ' / ';
                         echo '<span>Nom de la(les) maladie traitée(s) : </span>' . $vaccin['nom_maladie'] .'<br>';
                         echo '<a href = "editvaccins.php?id='. urlencode($vaccin['id']) . '">Edit vaccins</a>'.' ';
                         echo '<a href = "deletevaccins.php?id='. urlencode($vaccin['id']) . '">Delete vaccins</a><br>';
                       }?>
+=======
+                    foreach ($users as $user) {
+                        echo '<span>Nom du vaccin : </span>' . $user['nom_vaccin']. ' / ';
+                        echo '<span>Nom de la maladie traitée : </span>' . $user['nom_maladie'] .'<br>';
+                        echo '<a href = "editvaccins.php?id='. $user['id'] . '">Edit vaccins</a><br>';
+                    }?>
+>>>>>>> 748a3b2971f5502110d32c82d178c0867c40f1f1
             </div>
             <!-- /.row -->
         </div>
@@ -45,4 +53,11 @@ $vaccins = $query ->fetchAll();
     <script src="asset/metisMenu.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="asset/sb-admin-2.js"></script>
+<<<<<<< HEAD
 <?php include 'inc/footerback.php' ?>
+=======
+
+</body>
+
+</html>
+>>>>>>> 748a3b2971f5502110d32c82d178c0867c40f1f1

@@ -12,7 +12,7 @@
     <title><?php echo $title ?></title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="asset\bootstrap.min.css" rel="stylesheet">
+    <link href="asset/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="asset/metisMenu.min.css" rel="stylesheet">
