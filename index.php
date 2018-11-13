@@ -3,8 +3,6 @@
 $title = 'Accueil';
 ?>
 <?php include ('inc/header.php') ?>
-
-<div class="wrap">
   <section id="vaccins">
         <h2>C'est quoi un vaccin?</h2>
         <p>La vaccination est une protection contre une maladie infectieuse potentielle.</p>
@@ -34,6 +32,4 @@ $title = 'Accueil';
         </ul>
         <div class="clear"></div>
     </section>
-
-
-<?php include ('inc/footer.php')?>
+<?php include ('inc/footer.php');

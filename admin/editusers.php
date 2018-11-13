@@ -42,7 +42,7 @@ if (!empty($_POST['submitted'])) {
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                  <h1 class="page-header">New Vaccins</h1>
+                  <h1 class="page-header">Edit Users</h1>
                   <a href="listvaccins.php">Retour à la liste</a>
                   <form action="" method="post">
                     <label for="editname">Modifier le nom</label>
