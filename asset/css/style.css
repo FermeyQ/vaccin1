@@ -1,9 +1,12 @@
 @import 'reset.css';
 
-body{
-  font: 400 16px/1.3 Verdana, Arial,sans-serif;
+body {
+  font-family: 'Roboto', serif, Verdana, Arial, sans-serif;
+  font-size: 17px;
+  line height: 1.5;
   color: #000;
-  background-color: #fff;
+  margin: : 10px;
+  padding: 20px;
 }
 
 header {
@@ -18,13 +21,14 @@ header .container .logo{
   float: left;
 }
 
-header .container .titre{
-  margin: auto;
-  padding: 15px;
+body .container .titre {
   text-align: left;
+  font-weight: bold;
+  margin: 20px;
 }
 
-header img {
+img {
+  float: left;
   width: 100px;
 }
 
@@ -55,9 +59,10 @@ header nav ul li a{
   width: 100%;
 }
 
-header nav ul li a:hover{
-  color: #25527f;
-  background-color: #fff;
+header a:hover{
+  background-color: #00af54;
+  border-radius: 10px;
+  text-decoration: underline;
 }
 
 .wrap{
