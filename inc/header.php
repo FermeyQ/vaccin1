@@ -29,7 +29,7 @@
         </a>
 
         <div class="titre">
-          <div class="line1">My little carnet</div>
+          <div class="line1">my Little CARNET</div>
         </div>
       </div>
     </div>
