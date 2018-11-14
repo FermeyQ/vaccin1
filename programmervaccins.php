@@ -56,7 +56,7 @@ foreach ($details as $detail) {
     <input type="text" name="numerodelot" class="form-control" id="exampleInputPassword1" value="">
     <span><?php if (!empty($error['numerodelot'])){echo $error['numerodelot'];} ?></span>
   </div>
-  <input type="submit" name="submitted class="btn btn-primary" value="Confirmer">
+  <input type="submit" name="submitted" class="btn btn-primary" value="Confirmer">
 </form>
 
 <?php include('inc/footer.php') ?>
