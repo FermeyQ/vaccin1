@@ -32,7 +32,8 @@
         </a>
 
         <div class="titre">
-          <div class="line1">My little carnet</div>
+          <div class="line1">my Little</div>
+          <div class="line1">CARNET</div>
         </div>
       </div>
     </div>
@@ -50,8 +51,8 @@
         ?>
         <li><a href="moncarnet.php">Mon carnet</a></li>
         <li><a href="deconnection.php">Déconnexion</a></li>
-        <li>Bonjour <?php echo $_SESSION['user']['name']; ?>
-        </li>
+        <div class="bonjour"><li>Bonjour <?php echo $_SESSION['user']['name']; ?>
+        </li></di>
         <?php
     } else {
         ?>
