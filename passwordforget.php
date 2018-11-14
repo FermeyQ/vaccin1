@@ -32,9 +32,9 @@ if (!empty($_POST['submitted'])){
 
 ?>
 <?php include('inc/header.php') ?>
-<form class="" action="" method="post">
+<form class="form-inscription" action="" method="post">
   <label for="email">Email *</label>
   <input type="text" name="email" value="<?php if(!empty($_POST['email'])){echo $_POST['email'];} ?>">
-  <input type="submit" name="submitted" value="Modifier mot de passe">
+  <input type="submit" name="submitted" value="Valider email">
 </form>
 <?php include('inc/footer.php');
