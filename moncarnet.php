@@ -12,6 +12,7 @@ $users = $query ->fetchAll();
 ?>
 <?php include('inc/header.php'); ?>
 <h1>Programmer une vaccination</h1>
+<a href="mesvaccins.php">Mes vaccins programmées</a>
 
 <!-- tableau des vaccins a programmer -->
 <table id="tableCarnet" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">

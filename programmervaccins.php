@@ -34,7 +34,8 @@ if(!empty($_POST['submitted'])) {
 }
 ?>
 <?php include('inc/header.php'); ?>
-
+<a href="mesvaccins.php">Mes vaccins programmées</a>
+<br>
 <?php
 foreach ($details as $detail) {
     echo $detail['nom_vaccin'];
