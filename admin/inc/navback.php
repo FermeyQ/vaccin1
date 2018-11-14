@@ -37,13 +37,13 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="../index.php"><i class="fa fa-edit fa-fw"></i>Retour au site</a>
+                        <a href="../index.php"><i class="fa fa-home fa-fw"></i>Retour au site</a>
                     </li>
                     <li>
-                        <a href="listusers.php"><i class="fa fa-edit fa-fw"></i>List Users</a>
+                        <a href="listusers.php"><i class="fa fa-users fa-fw"></i>List Users</a>
                     </li>
                     <li>
-                        <a href="listvaccins.php"><i class="fa fa-edit fa-fw"></i>List Vaccins</a>
+                        <a href="listvaccins.php"><i class="fa fa-heart"></i>List Vaccins</a>
                     </li>
                 </ul>
             </div>
