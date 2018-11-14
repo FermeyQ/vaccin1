@@ -8,8 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" />
     <link rel="stylesheet" href="asset/css/style.css">
-    <title><?php echo $title ?></title>
+    <title><?php echo $title ?>
+    </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="asset/bootstrap.min.css" rel="stylesheet">

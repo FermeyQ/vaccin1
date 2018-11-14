@@ -1,5 +1,5 @@
-<?php include ('inc/fonction.php') ?>
-<?php include ('inc/pdo/pdo.php') ?>
+<?php include('inc/fonction.php') ?>
+<?php include('inc/pdo/pdo.php') ?>
 <?php
 $title = 'S\'inscrire';
 // FORMULAIRE SOUMIS
@@ -71,35 +71,46 @@ if (!empty($_POST['submitted'])) {
         $query->bindValue(':email', $email, PDO::PARAM_STR);
         $query->bindValue(':password', $hash, PDO::PARAM_STR);
         $query->execute();
-        header ('location: connection.php');
+        header('location: connection.php');
     }
 }
 ?>
 <?php include 'inc/header.php' ?>
-  <h2>S'inscrire</h2>
+<h1>S'inscrire</h1>
+<form class="form-inscription" action="" method="post">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Nom</label>
+        <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Entrer un nom" value="<?php if (!empty($_POST['name'])) {
+    echo $_POST['name'];
+}?>"
+            placeholder="jeanjean">
+        <span class="error"><?php if (!empty($error['name'])) {
+    echo $error['name'];
+}?></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer un email" value="<?php if (!empty($_POST['email'])) {
+    echo $_POST['email'];
+}?>"
+            placeholder="jeanjean@gmail.com">
+        <span class="error"><?php if (!empty($error['email'])) {
+    echo $error['email'];
+}?></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Mot de passe</label>
+        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Entrer un mot de passe" value="">
+        <span class="error"><?php if (!empty($error['password'])) {
+    echo $error['password'];
+}?></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Confirmer le mot de passe</label>
+        <input type="password" name="password2" class="form-control" id="exampleInputPassword1" placeholder="Confirmer ce mot de passe" value="">
+    </div>
+    <input type="submit" name="submitted" class="btn btn-primary" value="S'inscrire">
+</form>
 
-<div class="inscriptions">
-  <!-- formulaire d'inscriptions -->
-  <form action="" method="post">
-      <!-- form name -->
-      <label for="name">name *</label>
-      <span class="error"><?php if (!empty($error['name'])) {echo $error['name'];}?></span>
-      <input type="text" name="name" value="<?php if (!empty($_POST['name'])) {echo $_POST['name'];}?>"
-          placeholder="jeanjean">
-      <!-- form email -->
-      <label for="email">Email *</label>
-      <span class="error"><?php if (!empty($error['email'])) {echo $error['email'];}?></span>
-      <input type="email" name="email" value="<?php if (!empty($_POST['email'])) {echo $_POST['email'];}?>"
-          placeholder="jeanjean@gmail.com">
-      <!-- form password -->
-      <label for="password">Password *</label>
-      <span class="error"><?php if (!empty($error['password'])) {echo $error['password'];}?></span>
-      <input type="password" name="password" value="">
-      <!-- form password2 -->
-      <label for="password2">Confirm Password *</label>
-      <input type="password" name="password2" value="">
-      <!-- form submit -->
-      <input type="submit" name="submitted" value="Envoyer">
-  </form>
-</div>
 <?php include 'inc/footer.php';
