@@ -12,30 +12,32 @@ body {
 header {
   margin: auto;
   padding: 10px;
-  background-color: #009044;
+  background-color: #00b657;
 }
 
 body .container .titre {
   margin: auto;
-  text-align: left;
   font-weight: bold;
   padding: 20px;
   font-size: 20px;
+  padding-left: 150px;
+  color: #000c4c;
 }
 
 img {
   margin: auto;
   float: left;
   padding-left: 20px;
-  padding-top: 5px;
+  padding-top: 10px;
   width: 100px;
 }
 
 header nav {
   float: right;
-  padding:13px;
-  background-color: #009044;
-  margin-top: -54px;
+  padding: 13px;
+  background-color: #00b758;
+  margin-top: -65px;
+  border-radius: 6px;
 }
 
 header nav ul li{
@@ -45,7 +47,7 @@ header nav ul li{
 
 header nav ul li a{
   color: #fff;
-  margin: auto;
+  margin: 5px;
   padding: 15px;
   font-size: 1.3em;
   border-radius: 5px;
@@ -54,7 +56,8 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-  background-color: #00af54;
+  color: #000c4c;
+  background-color: #23b96b;
   border-radius: 10px;
   text-decoration: underline;
 }
@@ -95,7 +98,6 @@ body .inscriptions input{
 }
 
 
-
 /* FORMULAIRE CONNECTION */
 .form-inscription{
 width: 50%;
@@ -105,8 +107,6 @@ width: 50%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-
 
 
 
@@ -120,7 +120,7 @@ header nav{
 
 header nav ul li {
   width: 100%;
-  padding:15px;
+  padding: 15px;
   margin: auto;
 }
 
@@ -137,22 +137,28 @@ header h2{
   padding:3%;
   text-align:center;
 }
+
 }
 /*---------------------FOOTER------------------*/
 
-footer{
-  display: inline-block;
+footer {
+  color: #fff;
+  margin: auto;
+  padding: 40px;
+  background-color: #00c42f;
 }
 
-footer{
-  width: 100%;
-  margin: 0 auto;
-  background-color: #DBD5BB;
-}
-.piedpage{
-  float: left;
+footer a{
+  color: #000c4c;
+  font-weight: bold;
+  font-size: 15px;
+  float: right;
 }
 
-.sectionFinale p{
+footer a:hover{
+  color: #fff;
+}
+
+footer .piedpage{
   text-align: center;
 }
