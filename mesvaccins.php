@@ -26,6 +26,7 @@ foreach ($vaccins as $vaccin) {
     </tr>
   </thead>
   <?php foreach ($vaccins as $vaccin) {
+    $vaccin_id = $vaccin['id'];
     $sql = "SELECT * FROM vaccin1_vaccin WHERE id = $vaccin_id ";
     $query = $pdo -> prepare($sql);
     $query -> execute ();
@@ -36,9 +37,16 @@ foreach ($vaccins as $vaccin) {
       <td><?php echo $unique['nom_vaccin']; ?></td>
       <td><?php echo $unique['nom_maladie']; ?></td>
       <td><?php echo $vaccin['date']; ?></td>
-      <td><?php echo 'Futur lien'?></td>
+      <td><?php echo '<a href="deletevaccins.php?id='. $unique['id'].'">Annuler ce vaccin</a>'?></td>
     </tr>
   </tbody>
   <?php
 } ?>
-<?php include 'inc/footer.php' ?>
+</table>
+<br>
+<script>
+$(document).ready(function() {
+  $('#tableCarnet').DataTable();
+});
+</script>
+<?php include('inc/footer.php');?>
