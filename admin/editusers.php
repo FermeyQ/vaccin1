@@ -45,7 +45,8 @@ if (!empty($_POST['submitted'])) {
                 <div class="col-lg-12">
                     <h1 class="page-header">Edit Users</h1>
                     <a href="listvaccins.php">Retour à la liste</a>
-                    <form class="form" action="" method="post">
+                    
+                    <form class="form-inscription" action="" method="post">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Modifier le nom</label>
                             <input type="text" name="editname" class="form-control" id="exampleInputEmail1"
