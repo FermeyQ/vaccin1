@@ -9,12 +9,19 @@ $title = 'Accueil';
   <div class='o-slider' id='pbSlider0'>
     <div class="o-slider--item" data-image="asset/slider/images/vaccin2.jpg">
       <div class="o-slider-textWrap">
+        <h1 class="o-slider-title">En quoi consiste ce site ?</h1>
+        <span class="a-divider"></span>
+        <p class="o-slider-paragraph">Ce site est un carnet de vaccination électronique, il vous permet d'organiser en un endroit tous les vaccins fait ou à faire en un seul endroit.</p>
+      </div>
+    </div>
+    <div class="o-slider--item" data-image="asset/slider/images/vaccin1.jpg">
+      <div class="o-slider-textWrap">
         <h1 class="o-slider-title">C'est quoi un vaccin ?</h1>
         <span class="a-divider"></span>
         <p class="o-slider-paragraph">La vaccination est une protection contre une maladie infectieuse potentielle.</p>
       </div>
     </div>
-    <div class="o-slider--item" data-image="asset/slider/images/vaccin1.jpg">
+    <div class="o-slider--item" data-image="asset/slider/images/vaccin3.jpg">
       <div class="o-slider-textWrap">
         <h1 class="o-slider-title">Principe du vaccin</h1>
         <span class="a-divider"></span>
@@ -26,7 +33,7 @@ $title = 'Accueil';
           fabriqués par des cellules mémoires (lymphocytes B et T). Un vaccin est donc spécifique d'une maladie.</p>
       </div>
     </div>
-    <div class="o-slider--item" data-image="asset/slider/images/vaccin3.jpg">
+    <div class="o-slider--item" data-image="asset/slider/images/vaccin4.jpg">
       <div class="o-slider-textWrap">
         <h1 class="o-slider-title">Vaccin : qu'injecte-t-on ?</h1>
         <span class="a-divider"></span>
@@ -36,7 +43,7 @@ $title = 'Accueil';
           antigéniques (cas du vaccin contre la diphtérie par exemple).</p>
       </div>
     </div>
-    <div class="o-slider--item" data-image="asset/slider/images/vaccin4.jpg">
+    <div class="o-slider--item" data-image="asset/slider/images/vaccination_bg.jpg">
       <div class="o-slider-textWrap">
         <h1 class="o-slider-title">Utilisation de la vaccination</h1>
         <span class="a-divider"></span>
@@ -45,7 +52,7 @@ $title = 'Accueil';
           propagation de l'agent infectieux.</p>
       </div>
     </div>
-    <div class="o-slider--item" data-image="asset/slider/images/vaccination_bg.jpg">
+    <div class="o-slider--item" data-image="asset/slider/images/vaccination.jpg">
       <div class="o-slider-textWrap">
         <h1 class="o-slider-title">Quels sont les types de vaccins ?</h1>
         <span class="a-divider"></span>
@@ -59,7 +66,7 @@ $title = 'Accueil';
           du tétanos; soit la totalité de l’agent infectieux qui est inactivé (coqueluche).</p>
       </div>
     </div>
-    <div class="o-slider--item" data-image="asset/slider/images/vaccination.jpg">
+    <div class="o-slider--item" data-image="asset/slider/images/vaccin3.jpg">
       <div class="o-slider-textWrap">
         <h1 class="o-slider-title">Que contiennnent les vaccins ?</h1>
         <span class="a-divider"></span>
@@ -69,21 +76,6 @@ $title = 'Accueil';
           d’aluminium (hydroxyde ou phosphate). Des conservateurs antimicrobiens peuvent être employés pour empêcher la
           contamination microbienne du vaccin. Des stabilisants (lactose, sorbitol etc.) peuvent être utilisés afin de
           maintenir la qualité du vaccin pendant toute sa durée de conservation.</p>
-      </div>
-    </div>
-    <div class="o-slider--item" data-image="asset/slider/images/vaccin3.jpg">
-      <div class="o-slider-textWrap">
-        <h1 class="o-slider-title">Quels sont les vaccins obligatoires?</h1>
-        <span class="a-divider"></span>
-        <p class="o-slider-paragraph">Les 11 vaccinations obligatoires sont les suivantes : <ul>
-          <li>diphtérie, tétanos et poliomyélite (DTP)</li>
-          <li>coqueluche : TETRAVAC-ACELLULAIRE, INFANRIX, INFANRIX HEXA, HEXYON, VAXELIS</li>
-          <li>infections invasives à Haemophilus influenzae de type b : INFANRIX HEXA, HEXYON, VAXELIS.</li>
-          <li>hépatite B : ENGERIX</li>
-          <li>infections invasives à pneumocoque : PREVENAR</li>
-          <li>méningocoque de sérogroupe C : MENVEO, NIMENRIX</li>
-          <li>rougeole, oreillons et rubéole : PRIORIX </li>
-        </ul></p>
       </div>
     </div>
   </div>

@@ -32,8 +32,7 @@
         </a>
 
         <div class="titre">
-          <div class="line1">my Little</div>
-          <div class="line1">CARNET</div>
+          <div class="line1">my Little CARNET</div>
         </div>
       </div>
     </div>
