@@ -11,7 +11,6 @@ body {
 
 header {
   margin: auto;
-  padding: 10px;
   background-color: #00b657;
 
 }
@@ -21,7 +20,8 @@ body .container .titre {
   font-weight: bold;
   padding: 20px;
   font-size: 20px;
-  padding-left: 160px;
+  padding-left: 130px;
+  padding-top: 30px;
   color: #fff;
 }
 
@@ -34,8 +34,9 @@ img {
 header nav {
   float: right;
   padding: 13px;
+  padding-right: 70px;
   background-color: #00b758;
-  margin-top: -65px;
+  margin-top: -95px;
   border-radius: 6px;
 }
 
@@ -61,6 +62,10 @@ header nav ul li a:hover{
   text-decoration: underline;
 }
 
+header nav ul li .bonjour{
+  float: right;
+}
+
 h1{
   font-size: 2em;
   color: red;
@@ -68,11 +73,6 @@ h1{
   height:80px;
   width: 100%;
   text-align: center;
-}
-
-section {
-  margin: auto;
-  padding: 15px;
 }
 
 body .inscriptions{
@@ -152,7 +152,7 @@ footer p{
   padding: 10px;
   color: #000;
   text-decoration: underline;
-  text-align: center;
+  text-align: left;
 }
 
 footer a{

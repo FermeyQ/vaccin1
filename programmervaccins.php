@@ -33,6 +33,7 @@ if(!empty($_POST['submitted'])) {
       header ('location: mesvaccins.php');
     }
 }
+debug($error);
 ?>
 <?php include('inc/header.php'); ?>
 <a href="mesvaccins.php">Mes vaccins programmées</a>
