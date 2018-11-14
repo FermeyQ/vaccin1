@@ -51,7 +51,7 @@ if (!empty($_GET['email']) && !empty($_GET['token'])) {
 }
 ?>
 <?php include('inc/header.php') ?>
-<form class="" action="" method="post">
+<form class="form-inscription" action="" method="post">
   <label for="password">Mot de passe</label>
   <span><?php if(!empty($errors['password'])){echo $errors['password'];} ?></span>
   <input type="password" name="password" value="">
