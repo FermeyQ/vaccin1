@@ -20,16 +20,16 @@ body .container .titre {
   font-weight: bold;
   padding: 20px;
   font-size: 20px;
-  padding-left: 150px;
-  color: #000c4c;
+  padding-left: 160px;
+  color: #fff;
 }
 
 img {
   margin: auto;
   float: left;
   padding-left: 20px;
-  padding-top: 10px;
-  width: 100px;
+  padding-top: 5px;
+  width: 120px;
 }
 
 header nav {
@@ -144,8 +144,19 @@ header h2{
 footer {
   color: #fff;
   margin: auto;
-  padding: 40px;
-  background-color: #00c42f;
+  padding: 50px;
+  background-color: #282e2b;
+}
+
+footer {
+  float: right;
+  margin: auto;
+  /* padding: 10px; */
+}
+
+footer p{
+  color: #000;
+  text-decoration: underline;
 }
 
 footer a{
