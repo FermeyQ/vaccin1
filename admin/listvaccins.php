@@ -64,9 +64,9 @@ $vaccins = $query ->fetchAll();
     <script src="asset/metisMenu.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="asset/sb-admin-2.js"></script>
-    <?php include 'inc/footerback.php';?>
     <script>
-        $(document).ready(function() {
-            $('#tableCarnet').DataTable();
-        });
+    $(document).ready(function() {
+      $('#tableCarnet').DataTable();
+    });
     </script>
+    <?php include 'inc/footerback.php';?>
