@@ -45,17 +45,18 @@ foreach ($details as $detail) {
 }
 ?>
 <br>
-<!-- formulaire date du vaccin -->
-<form action="" method="post">
-<fieldset>
-<legend>DATE</legend>
-<label for="datevaccin">Date du vaccin</label>
-<span><?php if (!empty($error['datevaccin'])){echo $error['datevaccin'];} ?></span>
-<input type="date" name="datevaccin" id="datevaccin" value="">
-<label for="numerodelot">Numéro de lot</label>
-<span><?php if (!empty($error['numerodelot'])){echo $error['numerodelot'];} ?></span>
-<input type="text" name="numerodelot" value="">
-<input type="submit" name="submitted" value="Confirmer">
-</fieldset>
+<form class="form-inscription" action="" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Date du vaccin</label>
+    <input type="date" name="datevaccin" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="">
+    <span><?php if (!empty($error['datevaccin'])){echo $error['datevaccin'];} ?></span>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Numéro de lot</label>
+    <input type="text" name="numerodelot" class="form-control" id="exampleInputPassword1" value="">
+    <span><?php if (!empty($error['numerodelot'])){echo $error['numerodelot'];} ?></span>
+  </div>
+  <input type="submit" name="submitted class="btn btn-primary" value="Confirmer">
 </form>
+
 <?php include('inc/footer.php') ?>

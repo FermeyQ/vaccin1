@@ -1,3 +1,13 @@
+/* FORMULAIRE CONNECTION */
+.form-inscription{
+  width: 50%;
+      max-width: 450px;
+      margin: 25px auto;
+      padding: 20px 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }  
+
 .form  {
   max-width: 30%;
 }

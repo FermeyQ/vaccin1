@@ -13,6 +13,7 @@ header {
   margin: auto;
   padding: 10px;
   background-color: #00b657;
+
 }
 
 body .container .titre {
@@ -20,15 +21,13 @@ body .container .titre {
   font-weight: bold;
   padding: 20px;
   font-size: 20px;
-  padding-left: 150px;
-  color: #000c4c;
+  padding-left: 160px;
+  color: #fff;
 }
 
 img {
   margin: auto;
   float: left;
-  padding-left: 20px;
-  padding-top: 10px;
   width: 100px;
 }
 
@@ -145,10 +144,20 @@ footer {
   color: #fff;
   margin: auto;
   padding: 40px;
-  background-color: #00c42f;
+  background-color: #00b657;
+}
+
+footer p{
+  margin: auto;
+  padding: 10px;
+  color: #000;
+  text-decoration: underline;
+  text-align: center;
 }
 
 footer a{
+  margin: auto;
+  padding: 10px;
   color: #000c4c;
   font-weight: bold;
   font-size: 15px;
@@ -159,6 +168,37 @@ footer a:hover{
   color: #fff;
 }
 
-footer .piedpage{
+footer .piedpage {
   text-align: center;
+}
+
+
+/* social icons */
+
+
+.social-icons li {
+	float: left;
+	margin-right: 5px;
+}
+
+.social-icons li a {
+	width: 46px;
+	height: 46px;
+	display: block;
+	background: url('../image/social-icons.png');
+}
+
+.social-icons li a:hover.facebook {
+	background: url('../image/social-icons.png') no-repeat 0 -47px;
+	display: block;
+}
+
+.social-icons li a.twitter {
+	background-position: -52px 0;
+	display: block;
+}
+
+.social-icons li a:hover.twitter {
+	background: url('../image/social-icons.png') no-repeat -52px -47px;
+	display: block;
 }

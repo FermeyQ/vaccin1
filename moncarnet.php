@@ -37,8 +37,3 @@ $users = $query ->fetchAll();
 </table>
 <br>
 <?php include('inc/footer.php');?>
-<script>
-  $(document).ready(function() {
-    $('#tableCarnet').DataTable();
-  });
-</script>
