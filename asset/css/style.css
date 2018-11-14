@@ -144,22 +144,21 @@ header h2{
 footer {
   color: #fff;
   margin: auto;
-  padding: 50px;
-  background-color: #282e2b;
-}
-
-footer {
-  float: right;
-  margin: auto;
-  /* padding: 10px; */
+  padding: 40px;
+  background-color: #00b657;
 }
 
 footer p{
+  margin: auto;
+  padding: 10px;
   color: #000;
   text-decoration: underline;
+  text-align: center;
 }
 
 footer a{
+  margin: auto;
+  padding: 10px;
   color: #000c4c;
   font-weight: bold;
   font-size: 15px;
@@ -171,5 +170,6 @@ footer a:hover{
 }
 
 footer .piedpage{
-  text-align: center;
+  margin: auto;
+  float: left;
 }

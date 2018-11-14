@@ -26,6 +26,7 @@ $users = $query ->fetchAll();
                                     <th class="form">Nom</th>
                                     <th class="form">Email</th>
                                     <th class="form"></th>
+                                    <th class="form"></th>
                                 </tr>
                             </thead>
                             <?php foreach ($users as $user) {
@@ -61,8 +62,3 @@ $users = $query ->fetchAll();
     <!-- Custom Theme JavaScript -->
     <script src="asset/sb-admin-2.js"></script>
     <?php include 'inc/footerback.php';?>
-    <script>
-        $(document).ready(function() {
-            $('#tableCarnet').DataTable();
-        });
-    </script>

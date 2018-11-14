@@ -1,19 +1,23 @@
+</body>
 <div class="wrap">
 
   <footer>
-    <p>&#169;2018 les vaccins</p>
 
+    <div class="centre">
       <!--CASE 1-->
       <div class="piedpage">
         <h3>Solutions</h3>
       </div>
 
-      <!--CASE 3--------------------------->
+      <!--CASE 3-->
       <div class="piedpage">
-        <h3>Assistance</h3>
+        <h3>, Assistance</h3>
       </div>
+    </div>
+
       <a href="http://localhost/vaccin/vaccin1/index.php" id="haut">HAUT DE PAGE</a>
 
+        <p>&#169;2018 les vaccins</p>
 </div>
 
 

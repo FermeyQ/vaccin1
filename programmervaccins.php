@@ -30,11 +30,13 @@ if(!empty($_POST['submitted'])) {
       $query ->bindValue(':datevaccin',$datevaccin);
       $query ->bindValue(':numerodelot',$numerodelot);
       $query->execute();
+      header ('location: mesvaccins.php');
     }
 }
 ?>
 <?php include('inc/header.php'); ?>
-
+<a href="mesvaccins.php">Mes vaccins programmées</a>
+<br>
 <?php
 foreach ($details as $detail) {
     echo $detail['nom_vaccin'];
