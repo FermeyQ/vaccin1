@@ -55,19 +55,21 @@ header nav ul li a{
 
 header nav ul li a:hover{
   color: #fff;
-  background-color: #4478a7;
+  background-color: #22566d;
   text-decoration: none;
 }
 
 .bonjour{
   float: right;
-  margin: 5px;
-  color: #4478a7;
+  margin: 5px 0;
+  color: #22566d;
 }
 .line1{
-  margin: 10px;
-  color: #4478a7;
-  font-size: 1.5em;
+  font-family: fantasy;
+  margin: 0 45px 15px 0;
+  color: #22566d;
+  font-size: 2em;
+  font-weight: 100;
 }
 h1{
   font-size: 2em;
