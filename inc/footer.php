@@ -7,13 +7,21 @@
       <!--CASE 1-->
       <div class="piedpage">
         <h3>Solutions</h3>
+        <h3>Assistance</h3>
+        <h3>Assistance</h3>
+        <h3>Assistance</h3>
       </div>
 
+      <ul class="social-icons">
+        <li><a href="http://agra-culture.com/" class="facebook"></a></li>
+        <li><a href="http://agra-culture.com/" class="twitter"></a></li>
+      </ul>
+
       <!--CASE 3-->
-      <div class="piedpage">
-        <h3>, Assistance</h3>
+      <!-- <div class="piedpage1">
+        <h3>Assistance</h3>
       </div>
-    </div>
+    </div> -->
 
       <a href="http://localhost/vaccin/vaccin1/index.php" id="haut">HAUT DE PAGE</a>
 
