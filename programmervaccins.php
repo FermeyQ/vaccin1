@@ -30,6 +30,7 @@ if(!empty($_POST['submitted'])) {
       $query ->bindValue(':datevaccin',$datevaccin);
       $query ->bindValue(':numerodelot',$numerodelot);
       $query->execute();
+      header ('location: mesvaccins.php');
     }
 }
 ?>
