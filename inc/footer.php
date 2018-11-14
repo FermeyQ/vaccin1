@@ -23,7 +23,7 @@
       </div>
     </div> -->
 
-      <a href="http://localhost/vaccin/vaccin1/index.php" id="haut">HAUT DE PAGE</a>
+      <a href="#" id="haut">HAUT DE PAGE</a>
 
         <p>&#169;2018 les vaccins</p>
 </div>
