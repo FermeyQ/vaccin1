@@ -27,7 +27,7 @@
 
     <div class="container">
       <div class="logo-container">
-        <a href="http://localhost/vaccin/vaccin1/index.php" class="logo">
+        <a href="index.php" class="logo">
           <img title="MaVaccination" alt="MaVaccination.net" src="asset/image/logo.png">
         </a>
 
