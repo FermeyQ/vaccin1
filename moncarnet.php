@@ -23,9 +23,9 @@ $users = $query ->fetchAll();
       <th></th>
     </tr>
   </thead>
+  <tbody>
   <?php foreach ($users as $user) {
     ?>
-  <tbody>
     <tr>
       <td><?php echo $user['nom_vaccin']?></td>
       <td><?php echo $user['nom_maladie']?></td>

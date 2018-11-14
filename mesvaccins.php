@@ -7,13 +7,6 @@ $sql = "SELECT * FROM vaccin1_user_vaccin WHERE user_id = $user_id ";
 $query = $pdo -> prepare($sql);
 $query -> execute ();
 $vaccins = $query -> fetchAll ();
-foreach ($vaccins as $vaccin) {
-  $vaccin_id = $vaccin['id'];
-  $sql = "SELECT * FROM vaccin1_vaccin WHERE id = $vaccin_id ";
-  $query = $pdo -> prepare($sql);
-  $query -> execute ();
-  $unique = $query -> fetch ();
-}
 ?>
 <?php include 'inc/header.php' ?>
 <table id="tableCarnet" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
@@ -26,7 +19,7 @@ foreach ($vaccins as $vaccin) {
     </tr>
   </thead>
   <?php foreach ($vaccins as $vaccin) {
-    $vaccin_id = $vaccin['id'];
+    $vaccin_id = $vaccin['vaccin_id'];
     $sql = "SELECT * FROM vaccin1_vaccin WHERE id = $vaccin_id ";
     $query = $pdo -> prepare($sql);
     $query -> execute ();
