@@ -9,9 +9,9 @@ $title = 'Accueil';
   <div class='o-slider' id='pbSlider0'>
     <div class="o-slider--item" data-image="asset/slider/images/vaccin2.jpg">
       <div class="o-slider-textWrap">
-        <h1 class="o-slider-title">En quoi consiste ce site ?</h1>
+        <h1 class="o-slider-title" color='lime'>Bienvenue sur my Little CARNET !</h1>
         <span class="a-divider"></span>
-        <p class="o-slider-paragraph">Ce site est un carnet de vaccination électronique, il vous permet d'organiser en un endroit tous les vaccins fait ou à faire en un seul endroit.</p>
+        <p class="o-slider-paragraph">Le carnet de vaccination électronique que vous attendiez ! Se faire vacciner n'auras jamais été aussi simple !</p>
       </div>
     </div>
     <div class="o-slider--item" data-image="asset/slider/images/vaccin1.jpg">
