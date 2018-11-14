@@ -28,8 +28,8 @@ $vaccins = $query ->fetchAll();
                                 <tr>
                                     <th class="form">Vaccin</th>
                                     <th class="form">Maladie</th>
-                                    <th class="form"></th>
-                                    <th class="form"></th>
+                                    <th class="form">Edit vaccins</th>
+                                    <th class="form">Delete vaccins</th>
                                 </tr>
                             </thead>
                             <?php
@@ -41,8 +41,8 @@ $vaccins = $query ->fetchAll();
                                     </td>
                                     <td><?php echo $vaccin['nom_maladie'].'  '; ?>
                                     </td>
-                                    <td><?php echo '<a href = "editvaccins.php?id='. urlencode($vaccin['id']) . '">Edit vaccins</a>'.' '; ?>
-                                    <td><?php echo '<a href = "deletevaccins.php?id='. urlencode($vaccin['id']) . '">Delete vaccins</a>'.'<br>';
+                                    <td><?php echo '<a href = "editvaccins.php?id='. urlencode($vaccin['id']) . '"><i class="fa fa-edit fa-fw"></i></a>'.' '; ?>
+                                    <td><?php echo '<a href = "deletevaccins.php?id='. urlencode($vaccin['id']) . '"><i class="fa fa-trash fa-fw"></i></a>'.'<br>';
                     }?>
                                 </tr>
                             </tbody>
@@ -64,9 +64,4 @@ $vaccins = $query ->fetchAll();
     <script src="asset/metisMenu.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="asset/sb-admin-2.js"></script>
-    <script>
-    $(document).ready(function() {
-      $('#tableCarnet').DataTable();
-    });
-    </script>
     <?php include 'inc/footerback.php';?>

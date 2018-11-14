@@ -12,6 +12,7 @@ $users = $query ->fetchAll();
 ?>
 <?php include('inc/header.php'); ?>
 <h1>Programmer une vaccination</h1>
+<a href="mesvaccins.php">Mes vaccins programmées</a>
 
 <!-- tableau des vaccins a programmer -->
 <table id="tableCarnet" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
@@ -22,9 +23,9 @@ $users = $query ->fetchAll();
       <th></th>
     </tr>
   </thead>
+  <tbody>
   <?php foreach ($users as $user) {
     ?>
-  <tbody>
     <tr>
       <td><?php echo $user['nom_vaccin']?></td>
       <td><?php echo $user['nom_maladie']?></td>
@@ -36,8 +37,3 @@ $users = $query ->fetchAll();
 </table>
 <br>
 <?php include('inc/footer.php');?>
-<script>
-  $(document).ready(function() {
-    $('#tableCarnet').DataTable();
-  });
-</script>

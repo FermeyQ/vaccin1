@@ -8,6 +8,9 @@
   <meta charset="utf-8">
   <title><?php echo $title ?>
   </title>
+
+<link rel="icon" type="image/png" href="asset/image/logo.png" />
+
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="asset/bootstrap/bootstrap.min.css"><!-- bootstrap -->
   <link rel="stylesheet" href="asset/slider/sliderstyle.css">
@@ -29,7 +32,7 @@
         </a>
 
         <div class="titre">
-          <div class="line1">My little carnet</div>
+          <div class="line1">my Little CARNET</div>
         </div>
       </div>
     </div>

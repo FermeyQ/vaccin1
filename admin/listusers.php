@@ -25,7 +25,8 @@ $users = $query ->fetchAll();
                                 <tr>
                                     <th class="form">Nom</th>
                                     <th class="form">Email</th>
-                                    <th class="form"></th>
+                                    <th class="form">Edit users</th>
+                                    <th class="form">Delete users</th>
                                 </tr>
                             </thead>
                             <?php foreach ($users as $user) {
@@ -36,8 +37,8 @@ $users = $query ->fetchAll();
                                     </td>
                                     <td><?php echo $user['email'].' '; ?>
                                     </td>
-                                    <td><?php echo '<a href = "editusers.php?id='. urlencode($user['id']) . '">Edit users</a>'.' '; ?>
-                                    <td><?php echo '<a href = "deleteusers.php?id='. urlencode($user['id']) . '">Delete users</a>'.'<br>';
+                                    <td><?php echo '<a href = "editusers.php?id='. urlencode($user['id']) . '"><i class="fa fa-edit fa-fw"></i></a>'.' '; ?>
+                                    <td><?php echo '<a href = "deleteusers.php?id='. urlencode($user['id']) . '"><i class="fa fa-trash fa-fw"></i></a>'.'<br>';
 }?>
                                 </tr>
                             </tbody>
@@ -61,8 +62,3 @@ $users = $query ->fetchAll();
     <!-- Custom Theme JavaScript -->
     <script src="asset/sb-admin-2.js"></script>
     <?php include 'inc/footerback.php';?>
-    <script>
-        $(document).ready(function() {
-            $('#tableCarnet').DataTable();
-        });
-    </script>

@@ -5,11 +5,11 @@ $title = 'Edit vaccins';
 $error = array();
 $id = $_GET['id'];
 if (!empty($id) && is_numeric($_GET['id'])) {
-  $id = urldecode($_GET['id']);
-  $sql ="SELECT * FROM vaccin1_user WHERE id = $id";
-  $query = $pdo -> prepare($sql);
-  $query -> execute();
-  $user = $query -> fetch();
+    $id = urldecode($_GET['id']);
+    $sql ="SELECT * FROM vaccin1_user WHERE id = $id";
+    $query = $pdo -> prepare($sql);
+    $query -> execute();
+    $user = $query -> fetch();
 }
 if (!empty($_POST['submitted'])) {
     // faille XSS
@@ -28,13 +28,14 @@ if (!empty($_POST['submitted'])) {
         $sql = "UPDATE vaccin1_user SET name = :editname, email = :editemail WHERE id=$id";
         $query = $pdo->prepare($sql);
         $query->bindValue(':editname', $editname, PDO::PARAM_STR);
-        $query ->bindValue (':editemail', $editemail, PDO::PARAM_STR);
+        $query ->bindValue(':editemail', $editemail, PDO::PARAM_STR);
         $query ->execute();
-        header ('Location:listusers.php');
+        header('Location:listusers.php');
     }
 }
 ?>
 <?php include('inc/headerback.php') ?>
+
 <body>
     <?php include('inc/navback.php');?>
     <!-- Page Content -->
@@ -42,24 +43,36 @@ if (!empty($_POST['submitted'])) {
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                  <h1 class="page-header">Edit Users</h1>
-                  <a href="listvaccins.php">Retour à la liste</a>
-                  <form action="" method="post">
-                    <label for="editname">Modifier le nom</label>
-                    <span><?php if (!empty($error['editname'])) {echo $error['editname'];} ?></span>
-                    <input type="text" name="editname" value="<?php echo $user['name'] ?>">
-                    <label for="editemail">modifier l' email'</label>
-                    <span><?php if (!empty($error['editemail'])) {echo $error['editemail'];} ?></span>
-                    <input type="text" name="editemail" value="<?php echo $user['email'] ?>">
-                    <input type="submit" name="submitted" value="Modifier">
-                  </form>
-                <!-- /.col-lg-12 -->
+                    <h1 class="page-header">Edit Users</h1>
+                    <a href="listvaccins.php">Retour à la liste</a>
+                    
+                    <form class="form-inscription" action="" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Modifier le nom</label>
+                            <input type="text" name="editname" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Entrer un nom" value="<?php echo $user['name'] ?>">
+                            <span><?php if (!empty($error['editname'])) {
+    echo $error['editname'];
+} ?></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Modifier l'email</label>
+                            <input type="email" name="editemail" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Entrer un email" value="<?php echo $user['email'] ?>">
+                            <span><?php if (!empty($error['editemail'])) {
+    echo $error['editemail'];
+} ?></span>
+                        </div>
+                        <input type="submit" name="submitted" class="btn btn-primary" value="Modifier">
+                    </form>
+
+                    <!-- /.col-lg-12 -->
                 </div>
-            <!-- /.row -->
+                <!-- /.row -->
             </div>
-        <!-- /.container-fluid -->
+            <!-- /.container-fluid -->
         </div>
-    <!-- /#page-wrapper -->
+        <!-- /#page-wrapper -->
     </div>
     <!-- /#wrapper -->
     <!-- jQuery -->
@@ -70,4 +83,4 @@ if (!empty($_POST['submitted'])) {
     <script src="asset/metisMenu.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="asset/sb-admin-2.js"></script>
-<?php include 'inc/footerback.php';
+    <?php include 'inc/footerback.php';

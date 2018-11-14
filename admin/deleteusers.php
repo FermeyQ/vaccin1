@@ -3,6 +3,12 @@
 <?php
 $title = 'Delete users';
 $id = $_GET['id'];
+$sql = "SELECT * FROM vaccin1_user WHERE id =$id";
+$query = $pdo ->prepare($sql);
+$query -> execute();
+$users = $query -> fetch ();
+$user = $users['name'];
+$user .= ' /'.$users['email'];
 if (!empty($_POST['submitted'])) {
   $sql = "DELETE FROM vaccin1_user WHERE id=$id ";
   $query = $pdo ->prepare($sql);
@@ -22,7 +28,7 @@ if (!empty($_POST['submitted'])) {
                 </div>
         <a href="listvaccins.php">Retour à la liste</a>
         <form action="" method="post">
-          <span>VOULEZ-VOUS VRAIMENT SUPPRIMER CET USER</span>
+          <span>VOULEZ-VOUS VRAIMENT SUPPRIMER CET USER '<?php echo $user ?>'</span>
           <input type="submit" name="submitted" value="Supprimer">
         </form>
                 <!-- /.col-lg-12 -->
