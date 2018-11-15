@@ -23,6 +23,9 @@ if (!empty($_POST['submitted'])){
       } else {
         $errors['email'] = 'Vous n\'existez pas';
       }
+      if (count($errors)==0) {
+        header ('Location:passwordmodif.php?email='.urlencode($user['email']).'&token='.urlencode($user['token']));
+      }
     }
   }else {
     $errors['email'] = 'Veuillez renseigner un email valide';
@@ -32,14 +35,13 @@ if (!empty($_POST['submitted'])){
 ?>
 <?php include('inc/header.php') ?>
 <form class="form-inscription" action="" method="post">
+<div class="form-group">
   <label for="email">Email *</label>
-  <input type="text" name="email" value="<?php if(!empty($_POST['email'])){echo $_POST['email'];} ?>">
-  <input type="submit" name="submitted" value="Valider email">
+  <input type="text" name="email" class ="form-control" value="<?php if(!empty($_POST['email'])){echo $_POST['email'];} ?>">
+  <span><?php if (!empty($errors['password'])) {
+echo $errors['password'];
+} ?></span>
+</div>
+  <input type="submit" name="submitted" class="btn btn-primary" value="Valider email">
 </form>
-<div class="maladie">
-<?php if (!empty($body)){
-  echo $body;
-}
-   ?>
- </div>
 <?php include('inc/footer.php');

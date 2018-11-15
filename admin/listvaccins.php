@@ -1,7 +1,7 @@
 <?php include('../inc/fonction.php') ?>
 <?php include('../inc/pdo/pdo.php') ?>
 <?php
-$title = 'List Vaccins';
+$title = 'Liste des vaccins';
 $error = array();
 $sql = "SELECT * FROM vaccin1_vaccin";
 $query = $pdo -> prepare($sql);
@@ -17,7 +17,7 @@ $vaccins = $query ->fetchAll();
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">List Vaccins</h1>
+                    <h1 class="page-header">Liste des vaccins</h1>
                     <!-- /.col-lg-12 -->
                     <a href="newvaccins.php">New vaccins</a>
                     <br>

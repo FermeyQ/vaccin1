@@ -107,7 +107,7 @@ $title = 'Accueil';
         media: 1024
       },
       smartphone: {
-        height: 800,
+        height: 1000,
         media: 768
       }
     }

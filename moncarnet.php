@@ -22,8 +22,8 @@ $users = $query ->fetchAll();
 <table id="tableCarnet" class="table table-striped table-bordered" style="width:100%">
   <thead>
     <tr>
-      <th>Nom du vaccin</th>
-      <th>Nom de la maladie traitée</th>
+      <th>Vaccin</th>
+      <th>Maladie traitée</th>
       <th>Programmer ce vaccin</th>
     </tr>
   </thead>

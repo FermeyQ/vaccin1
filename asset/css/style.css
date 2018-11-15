@@ -151,7 +151,7 @@ width: 50%;
 }
 
 #containerTable {
-    width: 60%;
+    width: 70%;
     margin: 50px auto;
 }
 
@@ -159,6 +159,22 @@ width: 50%;
 /* .content {
   min-height: calc(100vh - 351px);
 } */
+
+/* SLICKNAV */
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
 
 /* ----------------------------------------------------------------------- */
 

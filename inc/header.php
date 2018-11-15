@@ -22,7 +22,6 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.4/css/fixedHeader.bootstrap4.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.bootstrap4.min.css" />
   <link rel="stylesheet" href="asset/css/style.css">
-
 </head>
 
 <body>
@@ -43,11 +42,11 @@
 
     <!--Le menu NAV-->
     <nav>
-      <ul>
+      <ul id="menu">
         <li><a href="index.php">Accueil</a></li>
         <?php if (isAdmin()) {
     ?>
-        <li><a href="admin/index.php">Back-Office</a></li>
+        <li><a href="admin/listusers.php">Back-Office</a></li>
         <?php
 } ?>
         <?php if (isLogged()) {

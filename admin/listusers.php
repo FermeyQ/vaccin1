@@ -1,7 +1,7 @@
 <?php include('../inc/fonction.php') ?>
 <?php include('../inc/pdo/pdo.php') ?>
 <?php
-$title = 'List User';
+$title = 'Liste des utilisateurs';
 $error = array();
 $sql = "SELECT * FROM vaccin1_user";
 $query = $pdo -> prepare($sql);
@@ -17,7 +17,7 @@ $users = $query ->fetchAll();
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">List User</h1>
+                    <h1 class="page-header">Liste des utilisateurs</h1>
                     <div id="containerTable">
                         <table id="tableUsers" class="table table-striped table-bordered" style="width:100%"
                             cellspacing="0" width="100%">
@@ -25,8 +25,8 @@ $users = $query ->fetchAll();
                                 <tr>
                                     <th class="form">Nom</th>
                                     <th class="form">Email</th>
-                                    <th class="form">Edit users</th>
-                                    <th class="form">Delete users</th>
+                                    <th class="form">Modifier l'utilisateur</th>
+                                    <th class="form">Effacer l'utilisateur</th>
                                 </tr>
                             </thead>
                             <tbody>
