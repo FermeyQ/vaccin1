@@ -58,15 +58,15 @@ header nav ul li a:hover{
   text-decoration: none;
 }
 
-.bonjour{
-  float: right;
+.bonjour p{
+
   margin: 5px 0;
-  color: #22566d;
+  color: #fff;
 }
 .line1{
   font-family: fantasy;
   margin: 0 45px 19px 0;
-  color: #22566d;
+  color: #fff;
   font-size: 2em;
   font-weight: 100;
   text-decoration: none;

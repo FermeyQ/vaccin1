@@ -54,9 +54,8 @@
         <li><a href="moncarnet.php">Mon carnet</a></li>
         <li><a href="deconnection.php">Déconnexion</a></li>
         <div class="bonjour">
-          <li>Bonjour <?php echo $_SESSION['user']['name']; ?>
-          </li>
-          </di>
+          <p>Bonjour <?php echo $_SESSION['user']['name']; ?></p>
+        </di>
           <?php
     } else {
         ?>
