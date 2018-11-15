@@ -180,6 +180,16 @@ width: 50%;
 	}
 }
 
+/* COPYRIGHT */
+.copyright p{
+  text-decoration: none;
+  color: #fff;
+  }
+  
+  .piedpage a {
+    color: #fff;
+    font-size: 4rem;
+  }
 /* ----------------------------------------------------------------------- */
 
 /*------------------------RESPONSIVE--------------------------------*/
@@ -238,10 +248,7 @@ header nav ul li a:hover{
 
 }
 /*---------------------FOOTER------------------*/
-.copyright p{
-text-decoration: none;
-color: #fff;
-}
+
 footer {
   color: #fff;
   margin: auto;
