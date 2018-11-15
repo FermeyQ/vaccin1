@@ -190,10 +190,10 @@ width: 50%;
   color: #fff;
 }
 
-  /* .piedpage a {
+  .piedpage a {
     color: #fff;
     font-size: 4rem;
-  } */
+  }
 /* ----------------------------------------------------------------------- */
 
 /*------------------------RESPONSIVE--------------------------------*/
@@ -287,13 +287,6 @@ footer a:hover{
 
 footer .piedpage{
   text-align: center;
-}
-
-footer .hautPage a{
-  color: #fff;
-  font-size: 4em;
-  padding: inherit;
-  margin-right: -40px;
 }
 
 
