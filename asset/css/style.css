@@ -200,17 +200,21 @@ header .line1{
 
 header img{
   margin: auto;
-  width: 50px;
+  width: 80px;
 }
 
 header nav{
   margin: auto;
-  padding: 15px;
+  padding: 10px;
 }
 
 header nav ul li a{
   width: 20px;
   font-size: 20px;
+}
+
+header nav ul li a:hover{
+  padding: 10px;
 }
 
 
