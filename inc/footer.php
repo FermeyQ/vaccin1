@@ -8,6 +8,7 @@
         <h3>Contact</h3>
         <h3>Contact</h3>
         <h3>Contact</h3>
+        <h3>Contact</h3>
       </div>
 
       <ul class="social-icons">

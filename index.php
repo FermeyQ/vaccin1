@@ -51,7 +51,7 @@ $title = 'Accueil';
           propagation de l'agent infectieux.</p>
       </div>
     </div>
-    <div class="o-slider--item" data-image="asset/slider/images/vaccination.jpg">
+    <div class="o-slider--item" data-image="asset/slider/images/chinoisdecoco.jpg">
       <div class="o-slider-textWrap">
         <h1 class="o-slider-title">Quels sont les types de vaccins ?</h1>
         <span class="a-divider"></span>
@@ -65,7 +65,7 @@ $title = 'Accueil';
           du tétanos; soit la totalité de l’agent infectieux qui est inactivé (coqueluche).</p>
       </div>
     </div>
-    <div class="o-slider--item" data-image="asset/slider/images/vaccin3.jpg">
+    <div class="o-slider--item" data-image="asset/slider/images/vaccin5.jpg">
       <div class="o-slider-textWrap">
         <h1 class="o-slider-title">Que contiennnent les vaccins ?</h1>
         <span class="a-divider"></span>
