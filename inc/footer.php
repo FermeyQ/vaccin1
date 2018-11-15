@@ -1,4 +1,4 @@
-</div>
+<!-- </div> -->
 </body>
 <div class="wrap">
 
@@ -7,10 +7,7 @@
     <div class="centre">
       <!--CASE 1-->
       <div class="piedpage">
-        <h3>Solutions</h3>
-        <h3>Assistance</h3>
-        <h3>Assistance</h3>
-        <h3>Assistance</h3>
+        <h3>Contact</h3>
       </div>
 
       <ul class="social-icons">
@@ -26,7 +23,7 @@
 
       <a href="#" id="haut">HAUT DE PAGE</a>
 
-        <p>&#169;2018 les vaccins</p>
+        <p>my Lttle CARNET&#169; 2018</p>
 </div>
 
 

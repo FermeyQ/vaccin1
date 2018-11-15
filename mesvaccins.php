@@ -21,6 +21,7 @@ $vaccins = getAllVaccinsOfThisUser($user_id);
       <th></th>
     </tr>
   </thead>
+  <tbody>
   <?php foreach ($vaccins as $vaccin) {
     $vaccin_id = $vaccin['vaccin_id'];
     $sql = "SELECT * FROM vaccin1_vaccin WHERE id = $vaccin_id ";
@@ -28,7 +29,6 @@ $vaccins = getAllVaccinsOfThisUser($user_id);
     $query -> execute ();
     $unique = $query -> fetch ();
     ?>
-  <tbody>
     <tr>
       <td><?php echo $unique['nom_vaccin']; ?></td>
       <td><?php echo $unique['nom_maladie']; ?></td>

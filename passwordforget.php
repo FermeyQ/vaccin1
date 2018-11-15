@@ -35,6 +35,7 @@ if (!empty($_POST['submitted'])){
 ?>
 <?php include('inc/header.php') ?>
 <form class="form-inscription" action="" method="post">
+<div class="form-group">
   <label for="email">Email *</label>
   <input type="text" name="email" class ="form-control" value="<?php if(!empty($_POST['email'])){echo $_POST['email'];} ?>">
   <span><?php if (!empty($errors['password'])) {
