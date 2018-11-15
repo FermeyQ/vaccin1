@@ -26,6 +26,8 @@ $users = $query ->fetchAll();
                                     <th class="form">Nom</th>
                                     <th class="form">Email</th>
                                     <th class="form">Role</th>
+                                    <th class="form">Crée le</th>
+                                    <th class="form">Modifié le</th>
                                     <th class="form">Modifier l'utilisateur</th>
                                     <th class="form">Effacer l'utilisateur</th>
                                 </tr>
@@ -39,6 +41,8 @@ $users = $query ->fetchAll();
                                     <td><?php echo $user['email'].' '; ?>
                                     </td>
                                     <td><?php echo $user['role'] ?></td>
+                                    <td><?php echo $user['created_at'] ?></td>
+                                    <td><?php echo $user['modified_at'] ?></td>
                                     <td><?php echo '<a href = "editusers.php?id='. urlencode($user['id']) . '"><i class="fa fa-edit fa-fw"></i></a>'.' '; ?>
                                     <td><?php echo '<a href = "deleteusers.php?id='. urlencode($user['id']) . '"><i class="fa fa-trash fa-fw"></i></a>'.'<br>';
 }?>
