@@ -59,10 +59,10 @@ header nav ul li a:hover{
 }
 
 .bonjour p{
-
   margin: 5px 0;
   color: #fff;
 }
+
 .line1{
   font-family: fantasy;
   margin: 0 45px 19px 0;
@@ -177,7 +177,7 @@ width: 50%;
 }
 
 /* ----------------------------------------------------------------------- */
-/* position relative */
+
 /*------------------------RESPONSIVE--------------------------------*/
 
 @media screen and (max-width:1150px) {
@@ -230,7 +230,8 @@ header nav ul li a:hover{
 }
 
 header .bonjour{
-
+position: relative;
+margin: auto;
 }
 
 
