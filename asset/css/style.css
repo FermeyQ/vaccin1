@@ -156,9 +156,9 @@ width: 50%;
 }
 
 /* STICKY FOOTER */
-.content {
+/* .content {
   min-height: calc(100vh - 351px);
-}
+} */
 
 /* SLICKNAV */
 .slicknav_menu {
@@ -184,7 +184,7 @@ width: 50%;
 
 header .container{
   margin: auto;
-  padding: 5px;
+  margin-bottom: -10px;
 }
 
 header .titre{
@@ -209,12 +209,15 @@ header nav{
 }
 
 header nav ul li a{
+  margin: auto;
+  padding: 8px;
   width: 20px;
   font-size: 20px;
 }
 
 header nav ul li a:hover{
-  padding: 10px;
+  margin: auto;
+  padding: 8px;
 }
 
 
