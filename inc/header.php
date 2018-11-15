@@ -35,7 +35,7 @@
         </a>
 
         <div class="titre">
-          <div class="line1">my Little CARNET</div>
+          <a href="index.php"><div class="line1">my Little CARNET</div></a>
         </div>
       </div>
     </div>
