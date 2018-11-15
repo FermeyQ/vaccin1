@@ -205,6 +205,9 @@ header .titre{
   font-size: 20px;
 }
 
+header .titre a{
+text-decoration: none;
+}
 header .line1{
   width: 100px;
   font-size: 25px;
