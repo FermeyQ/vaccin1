@@ -15,12 +15,13 @@ $users = $query ->fetchAll();
 <a href="mesvaccins.php">Mes vaccins programmées</a>
 
 <!-- tableau des vaccins a programmer -->
-<table id="tableCarnet" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+<div id="containerTable">
+<table id="tableCarnet" class="table table-striped table-bordered" style="width:100%">
   <thead>
     <tr>
       <th>Nom du vaccin</th>
       <th>Nom de la maladie traitée</th>
-      <th></th>
+      <th>Programmer ce vaccin</th>
     </tr>
   </thead>
   <tbody>
@@ -29,11 +30,22 @@ $users = $query ->fetchAll();
     <tr>
       <td><?php echo $user['nom_vaccin']?></td>
       <td><?php echo $user['nom_maladie']?></td>
-      <td><?php echo '<a href="programmervaccins.php?id='. $user['id'].'">Programmer ce vaccin</a>'?></td>
+      <td><?php echo '<a href="programmervaccins.php?id='. $user['id'].'"><i class="fa fa-calendar"></i></a>'?></td>
     </tr>
-  </tbody>
-  <?php
+    <?php
 } ?>
+</tbody>
 </table>
+</div>
 <br>
 <?php include('inc/footer.php');?>
+<script>
+$(document).ready(function(){
+    var table = $('#tableCarnet').DataTable({
+        dom: 'Bfrtip',
+        buttons: ['excel', 'pdf', 'print'],
+        responsive: true,
+        pageLength: 10
+    });
+});
+</script> 

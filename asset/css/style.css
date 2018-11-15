@@ -66,14 +66,16 @@ header nav ul li a:hover{
 }
 .line1{
   font-family: fantasy;
-  margin: 0 45px 15px 0;
+  margin: 0 45px 19px 0;
   color: #22566d;
   font-size: 2em;
   font-weight: 100;
+  text-decoration: none;
+
 }
 h1{
   font-size: 2em;
-  color: red;
+  color: #22566ded;
   padding:10px;
   height:80px;
   width: 100%;
@@ -101,6 +103,23 @@ body .inscriptions input{
 
 }
 
+/* ------------------------ GUILLAUME -----------------------------------*/
+/* SLIDERS LES MONDES PARALLELES */
+.o-slider-textWrap{
+  top: 50px;
+  width: 60%;
+}
+
+.o-slider-title{
+  font-size: 4rem;
+  background: #22566d7d;
+  padding: 10px;
+}
+.o-slider-paragraph{
+  font-size: 2rem;
+  background: #22566d7d;
+  padding: 10px;
+}
 
 /* FORMULAIRE CONNECTION */
 .form-inscription{
@@ -112,7 +131,30 @@ width: 50%;
     border-radius: 5px;
 }
 
+/* DATATABLE */
+.dataTables_info { display: none; }
+.dt-buttons { float: left; }
+.btn-secondary {     
+    background-color: #007bff;
+    border-color: #007bff; 
+}
 
+.btn-secondary:hover {     
+    background-color: #0056b3;
+    border-color: #0056b3; 
+}
+
+#containerTable {
+    width: 60%;
+    margin: 50px auto;
+}
+
+/* STICKY FOOTER */
+.content {
+  min-height: calc(100vh - 351px);
+}
+
+/* ----------------------------------------------------------------------- */
 
 /*------------------------RESPONSIVE--------------------------------*/
 

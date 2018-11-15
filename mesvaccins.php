@@ -9,7 +9,8 @@ $query -> execute ();
 $vaccins = $query -> fetchAll ();
 ?>
 <?php include 'inc/header.php' ?>
-<table id="tableCarnet" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+<div id="containerTable">
+<table id="tableMesVaccins" class="table table-striped table-bordered" style="width:100%">
   <thead>
     <tr>
       <th>Nom du vaccin</th>
@@ -32,14 +33,20 @@ $vaccins = $query -> fetchAll ();
       <td><?php echo $vaccin['date']; ?></td>
       <td><?php echo '<a href="deletevaccins.php?id='. $unique['id'].'">Annuler ce vaccin</a>'?></td>
     </tr>
-  </tbody>
-  <?php
+    <?php
 } ?>
+</tbody>
 </table>
+</div>
 <br>
-<script>
-$(document).ready(function() {
-  $('#tableCarnet').DataTable();
-});
-</script>
 <?php include('inc/footer.php');?>
+<script>
+$(document).ready(function(){
+    var table = $('#tableMesVaccins').DataTable({
+        dom: 'Bfrtip',
+        buttons: ['excel', 'pdf', 'print'],
+        responsive: true,
+        pageLength: 10
+    });
+});
+</script> 

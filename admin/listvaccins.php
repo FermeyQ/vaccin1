@@ -21,8 +21,8 @@ $vaccins = $query ->fetchAll();
                     <!-- /.col-lg-12 -->
                     <a href="newvaccins.php">New vaccins</a>
                     <br>
-                    <div class="form">
-                        <table id="tableCarnet" class="table table-striped table-bordered dt-responsive nowrap"
+                    <div id="containerTable">
+                        <table id="tableVaccins" class="table table-striped table-bordered" style="width:100%"
                             cellspacing="0" width="100%">
                             <thead>
                                 <tr>
@@ -32,10 +32,10 @@ $vaccins = $query ->fetchAll();
                                     <th class="form">Delete vaccins</th>
                                 </tr>
                             </thead>
+                            <tbody>
                             <?php
                     foreach ($vaccins as $vaccin) {
                         ?>
-                            <tbody>
                                 <tr>
                                     <td><?php echo $vaccin['nom_vaccin']. '  '; ?>
                                     </td>
@@ -65,3 +65,13 @@ $vaccins = $query ->fetchAll();
     <!-- Custom Theme JavaScript -->
     <script src="asset/sb-admin-2.js"></script>
     <?php include 'inc/footerback.php';?>
+    <script>
+$(document).ready(function(){
+    var table = $('#tableVaccins').DataTable({
+        dom: 'Bfrtip',
+        buttons: ['excel', 'pdf', 'print'],
+        responsive: true,
+        pageLength: 10
+    });
+});
+</script>

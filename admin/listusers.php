@@ -18,8 +18,8 @@ $users = $query ->fetchAll();
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">List User</h1>
-                    <div class="form">
-                        <table id="tableCarnet" class="table table-striped table-bordered dt-responsive nowrap"
+                    <div id="containerTable">
+                        <table id="tableUsers" class="table table-striped table-bordered" style="width:100%"
                             cellspacing="0" width="100%">
                             <thead>
                                 <tr>
@@ -29,9 +29,9 @@ $users = $query ->fetchAll();
                                     <th class="form">Delete users</th>
                                 </tr>
                             </thead>
+                            <tbody>
                             <?php foreach ($users as $user) {
     ?>
-                            <tbody>
                                 <tr>
                                     <td><?php echo $user['name']. '  '; ?>
                                     </td>
@@ -62,3 +62,13 @@ $users = $query ->fetchAll();
     <!-- Custom Theme JavaScript -->
     <script src="asset/sb-admin-2.js"></script>
     <?php include 'inc/footerback.php';?>
+    <script>
+$(document).ready(function(){
+    var table = $('#tableUsers').DataTable({
+        dom: 'Bfrtip',
+        buttons: ['excel', 'pdf', 'print'],
+        responsive: true,
+        pageLength: 10
+    });
+});
+</script> 

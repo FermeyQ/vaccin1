@@ -29,7 +29,7 @@ if (!empty($_POST['submitted'])) {
         <a href="listvaccins.php">Retour à la liste</a>
         <form action="" method="post">
           <span>VOULEZ-VOUS VRAIMENT SUPPRIMER CET USER '<?php echo $user ?>'</span>
-          <input type="submit" name="submitted" value="Supprimer">
+          <input class="btn btn-danger" type="submit" name="submitted" value="Supprimer">
         </form>
                 <!-- /.col-lg-12 -->
                 </div>

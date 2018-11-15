@@ -11,3 +11,21 @@
 .form  {
   max-width: 30%;
 }
+
+/* DATATABLE */
+.dataTables_info { display: none; }
+.dt-buttons { float: left; }
+.btn-secondary {     
+    background-color: #007bff;
+    border-color: #007bff; 
+    color: white;
+}
+.btn-secondary:hover {     
+    background-color: #0056b3;
+    border-color: #0056b3; 
+    color: white;
+}
+#containerTable {
+    width: 60%;
+    margin: 50px auto;
+}

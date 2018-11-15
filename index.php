@@ -4,13 +4,12 @@ $title = 'Accueil';
 ?>
 <?php include('inc/header.php') ?>
 
-<!-- SLIDERS LES MONDES PARALLELLES -->
+<!-- SLIDERS LES MONDES PARALLELES -->
 <div class='o-sliderContainer' id="pbSliderWrap0" style="margin-top:0;">
   <div class='o-slider' id='pbSlider0'>
     <div class="o-slider--item" data-image="asset/slider/images/vaccin2.jpg">
       <div class="o-slider-textWrap">
         <h1 class="o-slider-title" color='lime'>Bienvenue sur my Little CARNET !</h1>
-        <span class="a-divider"></span>
         <p class="o-slider-paragraph">Le carnet de vaccination électronique que vous attendiez ! Se faire vacciner n'auras jamais été aussi simple !</p>
       </div>
     </div>
@@ -101,7 +100,7 @@ $title = 'Accueil';
     },
     slider_Breakpoints: {
       default: {
-        height: 500
+        height: 1000
       },
       tablet: {
         height: 350,
