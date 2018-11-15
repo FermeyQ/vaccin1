@@ -40,10 +40,10 @@
                         <a href="../index.php"><i class="fa fa-home fa-fw"></i>Retour au site</a>
                     </li>
                     <li>
-                        <a href="listusers.php"><i class="fa fa-users fa-fw"></i>List Users</a>
+                        <a href="listusers.php"><i class="fa fa-users fa-fw"></i>Liste des utilisateurs</a>
                     </li>
                     <li>
-                        <a href="listvaccins.php"><i class="fa fa-heart"></i>List Vaccins</a>
+                        <a href="listvaccins.php"><i class="fa fa-heart"></i>Liste des vaccins</a>
                     </li>
                 </ul>
             </div>
