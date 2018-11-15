@@ -197,9 +197,15 @@ width: 50%;
 /* ----------------------------------------------------------------------- */
 
 /*------------------------RESPONSIVE--------------------------------*/
+@media screen and (max-width:640px) {
+  header .container{
+    margin: auto;
+    margin-bottom: -24px;
+    background-color: #63c11c;
+  }
+}
 
 @media screen and (max-width:1150px) {
-
 
 header .container{
   margin: auto;
@@ -251,9 +257,6 @@ header nav ul li a:hover{
   margin: auto;
   padding: 8px;
 }
-
-
-
 }
 /*---------------------FOOTER------------------*/
 
@@ -294,11 +297,11 @@ footer .piedpage{
 
 .social-icons li {
 	float: left;
-	margin-right: 5px;
+  margin-right: 5px;
 }
 
 .social-icons li a {
-	width: 46px;
+  width: 46px;
 	height: 46px;
 	display: block;
 	background: url('../image/social-icons.png');
@@ -311,7 +314,8 @@ footer .piedpage{
 
 .social-icons li a.twitter {
 	background-position: -52px 0;
-	display: block;
+  display: block;
+  
 }
 
 .social-icons li a:hover.twitter {
