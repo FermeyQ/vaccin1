@@ -1,12 +1,14 @@
 <?php include 'inc/fonction.php' ?>
 <?php include 'inc/pdo/pdo.php' ?>
+<?php include 'inc/request.php' ?>
 <?php
 $title = 'Mes vaccins';
 $user_id = $_SESSION['user']['id'];
-$sql = "SELECT * FROM vaccin1_user_vaccin WHERE user_id = $user_id ";
-$query = $pdo -> prepare($sql);
-$query -> execute ();
-$vaccins = $query -> fetchAll ();
+// $sql = "SELECT * FROM vaccin1_user_vaccin WHERE user_id = $user_id ";
+// $query = $pdo -> prepare($sql);
+// $query -> execute ();
+// $vaccins = $query -> fetchAll ();
+$vaccins = getAllVaccinsOfThisUser($user_id);
 ?>
 <?php include 'inc/header.php' ?>
 <div id="containerTable">
@@ -49,4 +51,4 @@ $(document).ready(function(){
         pageLength: 10
     });
 });
-</script> 
+</script>
