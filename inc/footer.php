@@ -7,7 +7,6 @@
     <div class="centre">
       <!--CASE 1-->
       <div class="piedpage">
-        <h3>Solutions</h3>
         <h3>Assistance</h3>
         <h3>Assistance</h3>
         <h3>Assistance</h3>
