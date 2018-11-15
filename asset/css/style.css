@@ -73,9 +73,15 @@ header nav ul li a:hover{
   font-weight: 100;
   text-decoration: none;
 }
+
 .maladie{
   text-align: center;
 }
+
+header .titre a{
+text-decoration: none;
+}
+
 h1{
   font-size: 2em;
   color: #22566ded;
@@ -182,12 +188,12 @@ width: 50%;
 .copyright p{
   text-decoration: none;
   color: #fff;
-  }
-  
-  .piedpage a {
+}
+
+  /* .piedpage a {
     color: #fff;
     font-size: 4rem;
-  }
+  } */
 /* ----------------------------------------------------------------------- */
 
 /*------------------------RESPONSIVE--------------------------------*/
@@ -208,11 +214,12 @@ header .titre{
 header .titre a{
 text-decoration: none;
 }
+
 header .line1{
   width: 100px;
   font-size: 25px;
   margin-left: -50px;
-  margin-top: -25px;
+  margin-top: -22px;
 }
 
 header img{
@@ -244,10 +251,6 @@ header nav ul li a:hover{
   padding: 8px;
 }
 
-/* header .bonjour{
-position: relative;
-margin: auto;
-} */
 
 
 }
@@ -282,8 +285,15 @@ footer a:hover{
   color: #fff;
 }
 
-footer .piedpage {
+footer .piedpage{
   text-align: center;
+}
+
+footer .hautPage a{
+  color: #fff;
+  font-size: 4em;
+  padding: inherit;
+  margin-right: -40px;
 }
 
 
