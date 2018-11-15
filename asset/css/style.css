@@ -184,12 +184,12 @@ width: 50%;
 .copyright p{
   text-decoration: none;
   color: #fff;
-  }
-  
-  .piedpage a {
+}
+
+  /* .piedpage a {
     color: #fff;
     font-size: 4rem;
-  }
+  } */
 /* ----------------------------------------------------------------------- */
 
 /*------------------------RESPONSIVE--------------------------------*/
@@ -277,8 +277,15 @@ footer a:hover{
   color: #fff;
 }
 
-footer .piedpage {
+footer .piedpage{
   text-align: center;
+}
+
+footer .hautPage a{
+  color: #fff;
+  font-size: 4em;
+  padding: inherit;
+  margin-right: -40px;
 }
 
 
