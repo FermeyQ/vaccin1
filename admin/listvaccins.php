@@ -19,7 +19,10 @@ $vaccins = $query ->fetchAll();
                 <div class="col-lg-12">
                     <h1 class="page-header">List Vaccins</h1>
                     <!-- /.col-lg-12 -->
+                    <div class="programmer">
+
                     <a href="newvaccins.php">New vaccins</a>
+                  </div>
                     <br>
                     <div id="containerTable">
                         <table id="tableVaccins" class="table table-striped table-bordered" style="width:100%"
