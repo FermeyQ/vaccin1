@@ -33,7 +33,10 @@ if (!empty($_POST['submitted'])){
 <?php include('inc/header.php') ?>
 <form class="form-inscription" action="" method="post">
   <label for="email">Email *</label>
-  <input type="text" name="email" value="<?php if(!empty($_POST['email'])){echo $_POST['email'];} ?>">
+  <input type="text" name="email" class ="form-control" value="<?php if(!empty($_POST['email'])){echo $_POST['email'];} ?>">
+  <span><?php if (!empty($errors['password'])) {
+echo $errors['password'];
+} ?></span>
   <input type="submit" name="submitted" value="Valider email">
 </form>
 <div class="maladie">
