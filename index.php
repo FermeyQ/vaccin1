@@ -103,11 +103,11 @@ $title = 'Accueil';
         height: 1000
       },
       tablet: {
-        height: 350,
+        height: 1000,
         media: 1024
       },
       smartphone: {
-        height: 250,
+        height: 800,
         media: 768
       }
     }
