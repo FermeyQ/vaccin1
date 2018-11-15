@@ -59,6 +59,8 @@ header nav ul li a:hover{
 }
 
 .bonjour p{
+  position: absolute;
+  top: 5px; right: 15px;
   margin: 5px 0;
   color: #fff;
 }
