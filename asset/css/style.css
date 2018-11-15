@@ -70,7 +70,9 @@ header nav ul li a:hover{
   font-size: 2em;
   font-weight: 100;
   text-decoration: none;
-
+}
+.maladie{
+  text-align: center;
 }
 h1{
   font-size: 2em;

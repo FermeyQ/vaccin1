@@ -79,8 +79,8 @@ if (!empty($_POST['submitted'])) {
 <h1>S'inscrire</h1>
 <form class="form-inscription" action="" method="post">
     <div class="form-group">
-        <label for="exampleInputEmail1">Nom</label>
-        <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <label for="exampleInputText1">Nom</label>
+        <input type="text" name="name" class="form-control" id="exampleInputText1" aria-describedby="emailHelp"
             placeholder="Entrer un nom" value="<?php if (!empty($_POST['name'])) {
     echo $_POST['name'];
 }?>"
@@ -107,8 +107,8 @@ if (!empty($_POST['submitted'])) {
 }?></span>
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Confirmer le mot de passe</label>
-        <input type="password" name="password2" class="form-control" id="exampleInputPassword1" placeholder="Confirmer ce mot de passe" value="">
+        <label for="exampleInputPassword2">Confirmer le mot de passe</label>
+        <input type="password" name="password2" class="form-control" id="exampleInputPassword2" placeholder="Confirmer ce mot de passe" value="">
     </div>
     <input type="submit" name="submitted" class="btn btn-primary" value="S'inscrire">
 </form>

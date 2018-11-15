@@ -56,7 +56,7 @@ if (!empty($_POST['submitted'])) {
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">modifier la maladie</label>
-                            <input type="text" name="editvaccin" class="form-control" id="exampleInputPassword1" value="<?php echo $vaccin['nom_maladie'] ?>">
+                            <input type="text" name="editmaladie" class="form-control" id="exampleInputPassword1" value="<?php echo $vaccin['nom_maladie'] ?>">
                             <span><?php if (!empty($error['editmaladie'])) {
     echo $error['editmaladie'];
 } ?></span>
