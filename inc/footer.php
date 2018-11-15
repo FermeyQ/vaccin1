@@ -5,32 +5,30 @@
     <div class="centre">
       <!--CASE 1-->
       <div class="piedpage">
-        <h3>Assistance</h3>
-        <h3>Assistance</h3>
-        <h3>Assistance</h3>
+        <a href="#" id="haut"><i class="fa fa-angle-double-up"></i></a>
+        <h3>Contact</h3>
       </div>
-
+      
       <ul class="social-icons">
         <li><a href="https://www.facebook.com/NFactorySchool/" class="facebook"></a></li>
         <li><a href="https://twitter.com/normandyfactory" class="twitter"></a></li>
       </ul>
-
+      
       <!--CASE 3-->
       <!-- <div class="piedpage1">
         <h3>Assistance</h3>
       </div>
     </div> -->
-
-      <a href="#" id="haut">HAUT DE PAGE</a>
-      <div class="copyright">
-        <p>my Little CARNET&#169;</p>
-        </div>
-</div>
-
-
-</footer>
-
-
+    
+    <div class="copyright">
+      <p>my Little CARNET&#169;</p>
+      </div>
+    </div>
+    
+    
+  </footer>
+  
+  
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 <!-- <script src="asset/js/jquery-3.2.0.min.js"></script> -->
