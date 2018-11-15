@@ -12,7 +12,10 @@ $users = $query ->fetchAll();
 ?>
 <?php include('inc/header.php'); ?>
 <h1>Programmer une vaccination</h1>
-<a href="mesvaccins.php">Mes vaccins programmées</a>
+
+  <div class="programmer">
+      <a href="mesvaccins.php">Mes vaccins programmées</a>
+  </div>
 
 <!-- tableau des vaccins a programmer -->
 <div id="containerTable">
@@ -48,4 +51,4 @@ $(document).ready(function(){
         pageLength: 10
     });
 });
-</script> 
+</script>

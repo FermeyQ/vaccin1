@@ -8,7 +8,6 @@ body {
   margin: auto;
 }
 
-
 header {
   margin: auto;
   background-color: #63c11c;
@@ -105,6 +104,11 @@ body .inscriptions input{
 
 }
 
+.programmer a{
+  margin: auto;
+  padding-left: 270px;
+}
+
 /* ------------------------ GUILLAUME -----------------------------------*/
 /* SLIDERS LES MONDES PARALLELES */
 .o-slider-textWrap{
@@ -163,11 +167,15 @@ width: 50%;
 @media screen and (max-width:700px) {
 
 header nav{
-  height: 50px;
+  height: 100px;
+}
+
+header a .logo{
+  width: 100%;
 }
 
 header nav ul li {
-  width: 100%;
+  width: 50%;
   padding: 15px;
   margin: auto;
 }
@@ -176,7 +184,7 @@ header{
     background-color:rgba(235, 234, 216,.5);
 }
 
-header h2{
+header .titre{
   width: 100%;
   text-align: center;
 }
@@ -223,7 +231,6 @@ footer .piedpage {
 
 
 /* social icons */
-
 
 .social-icons li {
 	float: left;
