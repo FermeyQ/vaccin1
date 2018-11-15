@@ -5,10 +5,12 @@
     <div class="centre">
       <!--CASE 1-->
       <div class="piedpage">
+         <a href="#" id="haut"><i class="fa fa-angle-double-up"></i></a>
         <h3>Contact</h3>
         <h3>Contact</h3>
         <h3>Contact</h3>
         <h3>Contact</h3>
+
       </div>
 
       <ul class="social-icons">
@@ -21,10 +23,6 @@
         <h3>Assistance</h3>
       </div>
     </div> -->
-
-    <div class="hautPage">
-     <a href="#" id="haut"><i class="fa fa-angle-double-up"></i></a>
-    </div>
 
     <div class="copyright">
       <p>my Little CARNET&#169;</p>
