@@ -7,7 +7,9 @@
     <div class="centre">
       <!--CASE 1-->
       <div class="piedpage">
-        <h3>Contact</h3>
+        <h3>Assistance</h3>
+        <h3>Assistance</h3>
+        <h3>Assistance</h3>
       </div>
 
       <ul class="social-icons">
@@ -23,7 +25,7 @@
 
       <a href="#" id="haut">HAUT DE PAGE</a>
 
-        <p>my Lttle CARNET&#169; 2018</p>
+        <p>&#169;2018 les vaccins</p>
 </div>
 
 
