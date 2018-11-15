@@ -168,7 +168,7 @@ width: 50%;
 
 header .container{
   margin: auto;
-  padding: 5px;
+  margin-bottom: -10px;
 }
 
 header .titre{
@@ -193,12 +193,14 @@ header nav{
 }
 
 header nav ul li a{
-  padding: 10px;
+  margin: auto;
+  padding: 8px;
   width: 20px;
   font-size: 20px;
 }
 
 header nav ul li a:hover{
+  margin: auto;
   padding: 8px;
 }
 
