@@ -3,21 +3,22 @@
 <?php
 $title = 'Annuler un vaccin';
 $id = $_SESSION['user']['id'];
+$vaccin = $_GET['id'];
 $sql = "SELECT * FROM vaccin1_user_vaccin WHERE user_id = $id";
 $query = $pdo -> prepare($sql);
 $query -> execute ();
 $vaccinsprogramme = $query -> fetchAll ();
 foreach ($vaccinsprogramme as $vaccinprogramme) {
-  $vaccin = $vaccinprogramme['vaccin_id'];
+  $vaccins = $vaccinprogramme['vaccin_id'];
 }
-$sql = "SELECT * FROM vaccin1_vaccin WHERE id = $vaccin";
+$sql = "SELECT * FROM vaccin1_vaccin WHERE id =$vaccin";
 $query = $pdo -> prepare($sql);
 $query -> execute ();
 $vaccins_nom = $query -> fetch ();
 $vaccin_nom = $vaccins_nom['nom_vaccin'];
 $vaccin_nom .= ' '.$vaccins_nom['nom_maladie'];
 if (!empty($_POST['submitted'])) {
-  $sql = "DELETE FROM vaccin1_user_vaccin WHERE id=$id ";
+  $sql = "DELETE FROM vaccin1_user_vaccin WHERE vaccin_id=$vaccin ";
   $query = $pdo ->prepare($sql);
   $query -> execute();
   header('Location:mesvaccins.php');

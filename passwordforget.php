@@ -20,7 +20,6 @@ if (!empty($_POST['submitted'])){
       if (!empty($user)) {
         $body = '<p>Veuillez cliquez sur le lien ci-dessous</p>';
         $body .= '<a href="passwordmodif.php?email='.urlencode($user['email']).'&token='.urlencode($user['token']).'">ici</a>';
-        echo $body;
       } else {
         $errors['email'] = 'Vous n\'existez pas';
       }
@@ -39,4 +38,10 @@ if (!empty($_POST['submitted'])){
   <input type="submit" name="submitted" class="btn btn-primary" value="Valider email">
   </div>
 </form>
+<div class="maladie">
+<?php if (!empty($body)){
+  echo $body;
+}
+   ?>
+ </div>
 <?php include('inc/footer.php');
