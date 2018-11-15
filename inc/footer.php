@@ -5,12 +5,9 @@
     <div class="centre">
       <!--CASE 1-->
       <div class="piedpage">
-         <a href="#" id="haut"><i class="fa fa-angle-double-up"></i></a>
-        <h3>Contact</h3>
-        <h3>Contact</h3>
-        <h3>Contact</h3>
-        <h3>Contact</h3>
-
+        <a href="#" id="haut"><i class="fa fa-angle-double-up"></i></a>
+        <h3 style="strong">Adresse :</h3>
+        <h3>28 Place Saint-Marc, 76000 Rouen</h3>
       </div>
 
       <ul class="social-icons">
