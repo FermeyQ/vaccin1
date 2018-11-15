@@ -252,7 +252,6 @@ header nav ul li a:hover{
 }
 
 
-
 }
 /*---------------------FOOTER------------------*/
 
@@ -298,6 +297,7 @@ footer .adresse{
   margin-top: -100px;
   padding-top: -50px;
   padding-bottom: 40px;
+  padding-left: 60px;
 
 }
 
