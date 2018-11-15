@@ -160,6 +160,22 @@ width: 50%;
   min-height: calc(100vh - 351px);
 }
 
+/* SLICKNAV */
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
 /* ----------------------------------------------------------------------- */
 
 /*------------------------RESPONSIVE--------------------------------*/

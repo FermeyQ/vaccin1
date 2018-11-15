@@ -37,8 +37,8 @@ if (!empty($_POST['submitted'])) {
 <h1>Se connecter</h1>
 <form class="form-inscription" action="" method="post">
     <div class="form-group">
-        <label for="exampleInputEmail1">Nom ou Email</label>
-        <input type="text" name="login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <label for="idEmail1">Nom ou Email</label>
+        <input type="text" name="login" class="form-control" id="idEmail1" aria-describedby="emailHelp"
             placeholder="Entrer un email ou un nom" value="<?php if (!empty($_POST['login'])) {
       echo $_POST['login'];
   } ?>">
@@ -47,8 +47,8 @@ if (!empty($_POST['submitted'])) {
   } ?></span>
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Mot de passe</label>
-        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Entrer un mot de passe"
+        <label for="idPassword1">Mot de passe</label>
+        <input type="password" name="password" class="form-control" id="idPassword1" placeholder="Entrer un mot de passe"
             value="">
         <span><?php if (!empty($errors['password'])) {
       echo $errors['password'];
