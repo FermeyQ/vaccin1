@@ -68,4 +68,4 @@
       </ul>
     </nav>
   </header>
-  <div class="content">
+  <!-- <div class="content"> -->
