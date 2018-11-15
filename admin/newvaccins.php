@@ -49,14 +49,16 @@ if (!empty($_POST['submitted'])) {
                 <div class="col-lg-12">
                     <h1 class="page-header">New Vaccins</h1>
                 <!-- formulaire -->
-                <form action="#" method="post">
+                <form class="form-inscription" action="#" method="post">
+                  <div class="form-group">
                     <label for="newvaccins">Nom du vaccin</label>
                     <span class="error"><?php if (!empty($error['newvaccin'])) {echo $error['newvaccin'];}?></span>
-                    <input type="text" name="newvaccin" id="newvaccin" value="">
+                    <input type="text" class="form-control" name="newvaccin" id="newvaccin" value="">
                     <label for="newmaladie">Nom de la maladie</label>
                     <span class="error"><?php if (!empty($error['newmaladie'])) {echo $error['newmaladie'];}?></span>
-                    <input type="text" name="newmaladie" id="newmaladie" value="">
-                    <input type="submit" name="submitted" id="" value="CONFIRMER">
+                    <input type="text" class="form-control" name="newmaladie" id="newmaladie" value="">
+                  </div>
+                    <input type="submit" class="btn btn-primary" name="submitted" id="" value="CONFIRMER">
                 </form>
                 <!-- /.col-lg-12 -->
             </div>

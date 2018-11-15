@@ -33,7 +33,7 @@ if (!empty($_GET['email']) && !empty($_GET['token'])) {
         // UPDATE
         $hash = password_hash($password,PASSWORD_DEFAULT);
         $token = generateRandomString();
-        $sql = "UPDATE m1_users SET password = :password,token = :token WHERE id = :id";
+        $sql = "UPDATE vaccin1_user SET password = :password,token = :token WHERE id = :id";
         $query = $pdo->prepare($sql);
         $query ->bindValue(':password',$hash);
         $query ->bindValue(':token',$token);
