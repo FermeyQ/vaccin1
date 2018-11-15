@@ -25,7 +25,7 @@ if (!empty($_POST['submitted'])) {
     }
     // si pas d'erreurs
     if (count($error) == 0) {
-        $sql = "UPDATE vaccin1_user SET name = :editname, email = :editemail WHERE id=$id";
+        $sql = "UPDATE vaccin1_user SET name = :editname, email = :editemail, modified_at = NOW() WHERE id=$id";
         $query = $pdo->prepare($sql);
         $query->bindValue(':editname', $editname, PDO::PARAM_STR);
         $query ->bindValue(':editemail', $editemail, PDO::PARAM_STR);
@@ -45,7 +45,7 @@ if (!empty($_POST['submitted'])) {
                 <div class="col-lg-12">
                     <h1 class="page-header">Edit Users</h1>
                     <a href="listvaccins.php">Retour à la liste</a>
-                    
+
                     <form class="form-inscription" action="" method="post">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Modifier le nom</label>
