@@ -55,7 +55,7 @@
         <li><a href="deconnection.php">Déconnexion</a></li>
         <div class="bonjour">
           <p>Bonjour <?php echo $_SESSION['user']['name']; ?></p>
-        </di>
+        </div>
           <?php
     } else {
         ?>
