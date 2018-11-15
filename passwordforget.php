@@ -41,6 +41,7 @@ if (!empty($_POST['submitted'])){
   <span><?php if (!empty($errors['password'])) {
 echo $errors['password'];
 } ?></span>
-  <input type="submit" name="submitted" value="Valider email">
+</div>
+  <input type="submit" name="submitted" class="btn btn-primary" value="Valider email">
 </form>
 <?php include('inc/footer.php');
