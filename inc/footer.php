@@ -1,9 +1,7 @@
 <!-- </div> -->
 </body>
 <div class="wrap">
-
   <footer>
-
     <div class="centre">
       <!--CASE 1-->
       <div class="piedpage">
@@ -24,8 +22,9 @@
     </div> -->
 
       <a href="#" id="haut">HAUT DE PAGE</a>
-
-        <p>&#169;2018 les vaccins</p>
+      <div class="copyright">
+        <p>my Little CARNET&#169;</p>
+        </div>
 </div>
 
 

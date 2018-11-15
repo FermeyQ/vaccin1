@@ -237,7 +237,10 @@ header .bonjour{
 
 }
 /*---------------------FOOTER------------------*/
-
+.copyright p{
+text-decoration: none;
+color: #fff;
+}
 footer {
   color: #fff;
   margin: auto;
