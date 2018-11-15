@@ -10,7 +10,7 @@ $title = 'Accueil';
     <div class="o-slider--item" data-image="asset/slider/images/vaccin2.jpg">
       <div class="o-slider-textWrap">
         <h1 class="o-slider-title" color='lime'>Bienvenue sur my Little CARNET !</h1>
-        <p class="o-slider-paragraph">Le carnet de vaccination électronique que vous attendiez ! Se faire vacciner n'auras jamais été aussi simple !</p>
+        <p class="o-slider-paragraph">Le carnet de vaccination électronique que vous attendiez ! Se faire vacciner n'aura jamais été aussi simple !</p>
       </div>
     </div>
     <div class="o-slider--item" data-image="asset/slider/images/vaccin1.jpg">

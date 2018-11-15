@@ -71,7 +71,9 @@ header nav ul li a:hover{
   font-size: 2em;
   font-weight: 100;
   text-decoration: none;
-
+}
+.maladie{
+  text-align: center;
 }
 h1{
   font-size: 2em;
@@ -134,14 +136,14 @@ width: 50%;
 /* DATATABLE */
 .dataTables_info { display: none; }
 .dt-buttons { float: left; }
-.btn-secondary {     
+.btn-secondary {
     background-color: #007bff;
-    border-color: #007bff; 
+    border-color: #007bff;
 }
 
-.btn-secondary:hover {     
+.btn-secondary:hover {
     background-color: #0056b3;
-    border-color: #0056b3; 
+    border-color: #0056b3;
 }
 
 #containerTable {

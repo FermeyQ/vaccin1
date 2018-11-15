@@ -33,18 +33,19 @@ if(!empty($_POST['submitted'])) {
       header ('location: mesvaccins.php');
     }
 }
-debug($error);
 ?>
 <?php include('inc/header.php'); ?>
 <a href="mesvaccins.php">Mes vaccins programmées</a>
 <br>
+<div class="maladie">
 <?php
 foreach ($details as $detail) {
-    echo $detail['nom_vaccin'];
+    echo 'Vaccin : '.$detail['nom_vaccin'];
     br();
-    echo $detail['nom_maladie'];
+    echo 'Maladie traitée : '.$detail['nom_maladie'];
 }
 ?>
+</div>
 <br>
 <form class="form-inscription" action="" method="post">
   <div class="form-group">

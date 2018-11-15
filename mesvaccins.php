@@ -30,7 +30,7 @@ $vaccins = $query -> fetchAll ();
     <tr>
       <td><?php echo $unique['nom_vaccin']; ?></td>
       <td><?php echo $unique['nom_maladie']; ?></td>
-      <td><?php echo $vaccin['date']; ?></td>
+      <td><?php echo $vaccin['date'];?></td>
       <td><?php echo '<a href="deletevaccins.php?id='. $unique['id'].'">Annuler ce vaccin</a>'?></td>
     </tr>
     <?php
@@ -49,4 +49,4 @@ $(document).ready(function(){
         pageLength: 10
     });
 });
-</script> 
+</script>
