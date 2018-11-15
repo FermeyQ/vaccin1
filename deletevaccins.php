@@ -17,11 +17,12 @@ $vaccins_nom = $query -> fetch ();
 $vaccin_nom = $vaccins_nom['nom_vaccin'];
 $vaccin_nom .= ' '.$vaccins_nom['nom_maladie'];
 if (!empty($_POST['submitted'])) {
-  $sql = "DELETE FROM vaccin1_user_vaccin WHERE id=$id ";
+  $sql = "DELETE FROM vaccin1_user_vaccin WHERE vaccin_id=$vaccin ";
   $query = $pdo ->prepare($sql);
   $query -> execute();
   header('Location:mesvaccins.php');
 }
+echo $vaccin;
 ?>
 <?php include 'inc/header.php' ?>
 <a href="mesvaccins.php">Retour à la liste</a>

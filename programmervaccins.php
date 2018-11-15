@@ -7,10 +7,14 @@
 // requete recup info details
 $id = $_GET['id'];
 $user_id = $_SESSION['user']['id'];
-$sql = "SELECT * FROM vaccin1_vaccin WHERE id = $id";
+$sql = "SELECT * FROM vaccin1_vaccin WHERE id = :id";
 $query = $pdo -> prepare($sql);
+$query -> bindValue(':id',$id,PDO::PARAM_INT);
 $query -> execute();
 $details = $query ->fetchAll();
+if (empty($details)) {
+  header ('Location: 404.php');
+}
 // requete envoie date bdd
 $error = array();
 if(!empty($_POST['submitted'])) {
