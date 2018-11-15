@@ -23,6 +23,9 @@ if (!empty($_POST['submitted'])){
       } else {
         $errors['email'] = 'Vous n\'existez pas';
       }
+      if (count($errors)==0) {
+        header ('Location:passwordmodif.php?email='.urlencode($user['email']).'&token='.urlencode($user['token']));
+      }
     }
   }else {
     $errors['email'] = 'Veuillez renseigner un email valide';
@@ -39,10 +42,4 @@ echo $errors['password'];
 } ?></span>
   <input type="submit" name="submitted" value="Valider email">
 </form>
-<div class="maladie">
-<?php if (!empty($body)){
-  echo $body;
-}
-   ?>
- </div>
 <?php include('inc/footer.php');
