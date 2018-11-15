@@ -168,7 +168,8 @@ header nav{
   height: 100px;
 }
 
-header a .logo{
+header .container{
+  float: left;
   width: 100%;
 }
 
