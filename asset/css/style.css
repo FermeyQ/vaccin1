@@ -184,7 +184,6 @@ width: 50%;
 
 @media screen and (max-width:1150px) {
 
-
 header .container{
   margin: auto;
   margin-bottom: -24px;
@@ -239,6 +238,7 @@ margin: auto;
 
 
 }
+
 /*---------------------FOOTER------------------*/
 .copyright p{
 text-decoration: none;
