@@ -205,11 +205,12 @@ header .line1{
 
 header img{
   margin: auto;
-  width: 80px;
+  width: 100px;
   padding-top: 20px;
 }
 
 header nav{
+  float: inherit;
   padding-right: 50px;
   margin-top: -135px;
   text-align: center;
@@ -231,10 +232,10 @@ header nav ul li a:hover{
   padding: 8px;
 }
 
-header .bonjour{
+/* header .bonjour{
 position: relative;
 margin: auto;
-}
+} */
 
 
 }
