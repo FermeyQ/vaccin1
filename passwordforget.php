@@ -34,9 +34,9 @@ if (!empty($_POST['submitted'])){
 <form class="form-inscription" action="" method="post">
 <div class="form-group">
   <label for="email">Email *</label>
-  <input type="text" name="email" value="<?php if(!empty($_POST['email'])){echo $_POST['email'];} ?>">
+  <input type="text" name="email" class="form-control" value="<?php if(!empty($_POST['email'])){echo $_POST['email'];} ?>">
+</div>
   <input type="submit" name="submitted" class="btn btn-primary" value="Valider email">
-  </div>
 </form>
 <div class="maladie">
 <?php if (!empty($body)){
