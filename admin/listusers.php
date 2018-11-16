@@ -46,7 +46,7 @@ $users = $query ->fetchAll();
                                     <td><?php echo '<a href = "editusers.php?id='. urlencode($user['id']) . '"><i class="fa fa-edit fa-fw"></i></a>'.' '; ?>
                                     <td><?php echo '<a href = "deleteusers.php?id='. urlencode($user['id']) . '"><i class="fa fa-trash fa-fw"></i></a>'.'<br>';
 }?>
-                                </tr>
+</tr>
                             </tbody>
                         </table>
                     </div>
