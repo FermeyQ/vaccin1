@@ -6,8 +6,16 @@
       <!--CASE 1-->
       <div class="piedpage">
         <a href="#" id="haut"><i class="fa fa-angle-double-up"></i></a>
-        <h3 style="strong">Adresse :</h3>
-        <h3>28 Place Saint-Marc, 76000 Rouen</h3>
+        <div class="invisible">
+          <h3>invisible</h3>
+          <h3>invisible</h3>
+
+      </div>
+        <div class="adresse">
+          <h3 style="strong">Adresse :</h3>
+          <h3>28 Place Saint-Marc</h3>
+          <h3> 76000 Rouen</h3>
+        </div>
       </div>
 
       <ul class="social-icons">
@@ -20,9 +28,6 @@
         <h3>Assistance</h3>
       </div>
     </div> -->
-
-    <div class="hautPage">
-    </div>
 
     <div class="copyright">
       <p>my Little CARNET&#169;</p>
