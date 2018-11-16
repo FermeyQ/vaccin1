@@ -9,7 +9,7 @@
   <title><?php echo $title ?>
   </title>
 
-  <link rel="icon" type="image/png" href="asset/image/logo.png" />
+  <link rel="icon" type="image/png" href="asset/image/logofavicon.png" />
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!-- <link rel="stylesheet" href="asset/bootstrap/bootstrap.min.css"> -->
