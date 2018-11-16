@@ -18,6 +18,7 @@ $vaccins = getAllVaccinsOfThisUser($user_id);
       <th>Nom du vaccin</th>
       <th>Nom de la maladie traitée</th>
       <th>Date de vaccination prévue</th>
+      <th>Numéro de lot</th>
       <th></th>
     </tr>
   </thead>
@@ -33,6 +34,7 @@ $vaccins = getAllVaccinsOfThisUser($user_id);
       <td><?php echo $unique['nom_vaccin']; ?></td>
       <td><?php echo $unique['nom_maladie']; ?></td>
       <td><?php echo $vaccin['date'];?></td>
+      <td><?php echo $vaccin['numero_de_lot'] ?></td>
       <td><?php echo '<a href="deletevaccins.php?id='. $unique['id'].'">Annuler ce vaccin</a>'?></td>
     </tr>
     <?php
