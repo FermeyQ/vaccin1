@@ -34,7 +34,11 @@ if (!empty($_POST['submitted'])) {
 }
   ?>
 <?php include('inc/header.php'); ?>
-<h1>Se connecter</h1>
+
+  <div class="titreInsc">
+    <h1>Se connecter</h1>
+  </div>
+  
 <form class="form-inscription" action="" method="post">
     <div class="form-group">
         <label for="idEmail1">Nom ou Email</label>
