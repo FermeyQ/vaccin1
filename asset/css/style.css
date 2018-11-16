@@ -188,15 +188,22 @@ width: 50%;
 .copyright p{
   text-decoration: none;
   color: #fff;
-  margin-left: -8px;
-  margin-top: -20px;
-  padding-bottom: -50px;
 }
 
+  .piedpage a {
+    color: #fff;
+    font-size: 4rem;
+  }
 /* ----------------------------------------------------------------------- */
 
 /*------------------------RESPONSIVE--------------------------------*/
-
+@media screen and (max-width:640px) {
+  header .container{
+    margin: auto;
+    margin-bottom: -24px;
+    background-color: #63c11c;
+  }
+}
 
 @media screen and (max-width:1150px) {
 
@@ -250,10 +257,7 @@ header nav ul li a:hover{
   margin: auto;
   padding: 8px;
 }
-
-
 }
-
 /*---------------------FOOTER------------------*/
 
 footer {
@@ -288,26 +292,8 @@ footer .piedpage{
   text-align: center;
 }
 
-.piedpage a {
-  color: #fff;
-  font-size: 4rem;
-  margin-top: -20px;
-}
-
-footer .adresse{
-  margin-top: -50px;
-  padding-top: -50px;
-  padding-bottom: 40px;
-  padding-left: 60px;
-
-}
 
 /* social icons */
-.social-icons{
-  margin-top: -120px;
-  padding-top: -50px;
-  padding-bottom: 70px;
-}
 
 .social-icons li {
 	float: left;
