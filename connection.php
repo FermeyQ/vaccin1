@@ -16,7 +16,7 @@ if (!empty($_POST['submitted'])) {
     $user = $query ->fetch();
     if (!empty($user)) {
         if (!password_verify($password, $user['password'])) {
-            $errors['password'] = 'mauvais mot de passe';
+            $errors['password'] = 'Mauvais mot de passe';
         }
     } else {
         $errors['login'] = 'Veuillez vous inscrire';
