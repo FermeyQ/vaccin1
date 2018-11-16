@@ -28,7 +28,7 @@ if (!empty($_POST['submitted'])) {
 <a href="mesvaccins.php">Retour à la liste</a>
 <form action="" method="post">
   <span>VOULEZ-VOUS VRAIMENT SUPPRIMER CE VACCIN '<?php echo $vaccin_nom . ' ' . $vaccinprogramme['date'] ?>'</span>
-  <input type="submit" name="submitted" value="Supprimer">
+  <input type="submit" class="btn btn-danger" name="submitted" value="Supprimer">
 </form>
 </table>
 <br>
