@@ -16,7 +16,7 @@ if (!empty($_POST['submitted'])) {
     $user = $query ->fetch();
     if (!empty($user)) {
         if (!password_verify($password, $user['password'])) {
-            $errors['password'] = 'mauvais mot de passe';
+            $errors['password'] = 'Mauvais mot de passe';
         }
     } else {
         $errors['login'] = 'Veuillez vous inscrire';
@@ -34,7 +34,11 @@ if (!empty($_POST['submitted'])) {
 }
   ?>
 <?php include('inc/header.php'); ?>
-<h1>Se connecter</h1>
+
+  <div class="titreInsc">
+    <h1>Se connecter</h1>
+  </div>
+  
 <form class="form-inscription" action="" method="post">
     <div class="form-group">
         <label for="idEmail1">Nom ou Email</label>

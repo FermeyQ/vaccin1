@@ -54,11 +54,11 @@ if (!empty($_GET['email']) && !empty($_GET['token'])) {
 <form class="form-inscription" action="" method="post">
 <div class="form-group">
   <label for="password">Mot de passe</label>
-  <span><?php if(!empty($errors['password'])){echo $errors['password'];} ?></span>
   <input type="password" class="form-control" name="password" value="">
-  <label for="password2">Confirmer mot de passe</label>
   <span><?php if(!empty($errors['password'])){echo $errors['password'];} ?></span>
+  <label for="password2">Confirmer mot de passe</label>
   <input type="password" class="form-control" name="password2" value="">
+  <span><?php if(!empty($errors['password'])){echo $errors['password'];} ?></span>
   </div>
 <input type="submit" name="submitted" class="btn btn-primary" value="Modifier">
 </form>

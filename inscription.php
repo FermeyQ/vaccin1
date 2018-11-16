@@ -14,27 +14,17 @@ if (!empty($_POST['submitted'])) {
     // validation name
     if (!empty($name)) {
         if (strlen($name) < 5) {
-            $error['name'] = 'min 5 caracteres';
+            $error['name'] = 'Min 5 caracteres';
         } elseif (strlen($name) > 50) {
-            $error['name'] = 'max 50 caracteres';
-        } else {
-            //    requete
-            $sql = "SELECT name FROM vaccin1_user WHERE name = :name";
-            $query = $pdo->prepare($sql);
-            $query->bindValue(':name', $name, PDO::PARAM_STR);
-            $query->execute();
-            $username = $query->fetch();
-            if (!empty($username)) {
-                $error['name'] = 'name deja utilisé';
-            }
+            $error['name'] = 'Max 50 caracteres';
         }
     } else {
-        $error['name'] = 'renseigner un name';
+        $error['name'] = 'Veuillez entrer un nom';
     }
     // validation email
     if (!empty($email)) {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $error['email'] = 'renseigner un email';
+            $error['email'] = 'Veuillez entrer un email';
         } else {
             //    requete
             $sql = "SELECT email FROM vaccin1_user WHERE email = :email";
@@ -43,11 +33,11 @@ if (!empty($_POST['submitted'])) {
             $query->execute();
             $useremail = $query->fetch();
             if (!empty($useremail)) {
-                $error['email'] = 'email deja utilisé';
+                $error['email'] = 'Email deja utilisé';
             }
         }
     } else {
-        $error['email'] = 'renseigner un email';
+        $error['email'] = 'Veuillez entrer un email';
     }
     // validation password
     if (!empty($password) && !empty($password2)) {
@@ -76,7 +66,11 @@ if (!empty($_POST['submitted'])) {
 }
 ?>
 <?php include 'inc/header.php' ?>
-<h1>S'inscrire</h1>
+
+<div class="titreInsc">
+  <h1>S'inscrire</h1>
+</div>
+
 <form class="form-inscription" action="" method="post">
     <div class="form-group">
         <label for="idText1">Nom</label>

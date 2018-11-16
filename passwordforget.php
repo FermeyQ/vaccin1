@@ -21,7 +21,7 @@ if (!empty($_POST['submitted'])){
         $body = '<p>Veuillez cliquez sur le lien ci-dessous</p>';
         $body .= '<a href="passwordmodif.php?email='.urlencode($user['email']).'&token='.urlencode($user['token']).'">ici</a>';
       } else {
-        $errors['email'] = 'Vous n\'existez pas';
+        $errors['email'] = 'Veuillez vous inscrire';
       }
       if (count($errors)==0) {
         header ('Location:passwordmodif.php?email='.urlencode($user['email']).'&token='.urlencode($user['token']));
